@@ -1,0 +1,3 @@
+[submodule "Mzinga"]
+	path = Mzinga
+	url = https://github.com/jonthysell/Mzinga
