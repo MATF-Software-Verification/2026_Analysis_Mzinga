@@ -17,10 +17,10 @@ param
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $BaseDir = Split-Path -Parent $ScriptDir
 
-$TestsDir = $ScriptDir
+$TestsDir = Join-Path $BaseDir "Tests\Mzinga.Tests.New"
 $OriginalTestProject = Join-Path $BaseDir "Mzinga\src\Mzinga.Test\Mzinga.Test.csproj"
-$ResultsDir = Join-Path $TestsDir "Results"
-$CoverageReportDir = Join-Path $TestsDir "CoverageReport"
+$ResultsDir = Join-Path $ScriptDir "Results"
+$CoverageReportDir = Join-Path $ScriptDir "CoverageReport"
 
 if ($Clean)
 {

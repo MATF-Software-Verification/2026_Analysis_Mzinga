@@ -40,6 +40,16 @@ On the other hand, there are classes that are not covered as much or not covered
 4. Utility classes: Simple utility structures like `Mzinga.AppInfo`, `Mzinga.VersionUtils`, `Mzinga.Core.CacheMetricsSet` and `Mzinga.Core.MoveSet` currently have 0% coverage but require minimal effort to verify.
 
 <figure id="img2" style="text-align: center;">
-  <img src="./Tests/Images/report2.png" alt="Original code coverage detailed results">
+  <img src="./Tests/Results/Images/report2.png" alt="Original code coverage detailed results">
   <figcaption>Image 2: Original code coverage detailed results</figcaption>
 </figure>
+
+### **Adding new tests**
+
+A new unit test project named `Mzinga.Tests.New` was initialized within the `Tests` directory. This MSTest project will hold new tests focused on covering lines and branches the original tests do not cover.
+
+To address the missing coverage in the `Mzinga.Engine` namespace, the following tests were added for the `EngineConfig` class:
+
+*   **`DefaultConstructor_InitializeCorrectly`**: Verifies that when an `EngineConfig` is initialized using its default constructor, essential properties like internal `MetricWeightSet` are instantiated, core constant fallbacks (`DefaultMaxHelperThreads` and `DefaultReportIntermediateBestMoves`) are behaving as expected and `MaxBranchingFactor` defaults correctly to null.
+*   **`LoadConfig_WithValidXmlStream_LoadsOptions`**: Tests the parsing functionality of the config system. It provides an in-memory stream containing an XML configuration matching the `GameAI` schema and verifies that options like `MaxBranchingFactor`, `MaxHelperThreads`, and enumerations like `PonderDuringIdle` are correctly read without errors and mapped on the resulting configuration state.
+*   **`LoadConfig_WithInvalidXmlStream_ThrowsXmlException`**: Checks the robustness of the parsing mechanism by intentionally providing malformed XML config payload (missing closing tag). It tests if the code throws a `System.Xml.XmlException` to avoid silent application corruption.
