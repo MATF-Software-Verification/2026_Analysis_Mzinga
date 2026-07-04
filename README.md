@@ -14,4 +14,4 @@ This repository contains an analysis of the Mzinga project, conducted as a proje
 
 ### Instructions
 
-//TODO
+Detailed instructions for running scripts and reproducing results are located in **[Project Analysis Report](./ProjectAnalysisReport.md)**.
