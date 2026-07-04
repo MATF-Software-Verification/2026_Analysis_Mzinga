@@ -1,12 +1,17 @@
 param
 (
     [Parameter(Mandatory = $false, Position = 0)]
-    [ValidateSet("original", "new", "all")]
+    [ValidateSet("original", "new", "all", "none")]
     [string]$Target = "all",
 
     [Parameter(Mandatory = $false)]
     [switch]$Visualize
 )
+
+if ($PSBoundParameters.ContainsKey('Visualize') -and -not $PSBoundParameters.ContainsKey('Target'))
+{
+    $Target = "none"
+}
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $BaseDir = Split-Path -Parent $ScriptDir
@@ -16,13 +21,16 @@ $OriginalTestProject = Join-Path $BaseDir "Mzinga\src\Mzinga.Test\Mzinga.Test.cs
 $ResultsDir = Join-Path $TestsDir "Results"
 $CoverageReportDir = Join-Path $TestsDir "CoverageReport"
 
-if (!(Test-Path $ResultsDir))
+if ($Target -ne "none")
 {
-    New-Item -ItemType Directory -Path $ResultsDir | Out-Null
-}
-else
-{
-    Remove-Item -Path (Join-Path $ResultsDir "*") -Recurse -Force -ErrorAction SilentlyContinue
+    if (!(Test-Path $ResultsDir))
+    {
+        New-Item -ItemType Directory -Path $ResultsDir | Out-Null
+    }
+    else
+    {
+        Remove-Item -Path (Join-Path $ResultsDir "*") -Recurse -Force -ErrorAction SilentlyContinue
+    }
 }
 
 function Run-DotnetTest
@@ -62,7 +70,7 @@ if ($Visualize)
     if (!(Get-Command reportgenerator -ErrorAction SilentlyContinue))
     {
         Write-Host "Installing dotnet-reportgenerator-globaltool..."
-        dotnet tool install -g dotnet-reportgenerator-globaltool --ignore-failed-sources -ErrorAction SilentlyContinue
+        dotnet tool install -g dotnet-reportgenerator-globaltool --ignore-failed-sources 2>&1 | Out-Null
     }
     
     $ReportsPattern = Join-Path $ResultsDir "*\coverage.cobertura.xml"
