@@ -1,19 +1,21 @@
-# Mzinga project analysis report
+# **Mzinga project analysis report**
 
-## Unit testing and code coverage
+## **Unit testing and code coverage**
 
 The **Mzinga** project utilizes the **MSTest** framework for its existing unit tests. Alongside the test framework, **Coverlet** is integrated as a cross-platform code coverage library for .NET. 
 
 To streamline the execution and reporting of unit tests, a PowerShell script `run_tests.ps1` was created in the `Tests` directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
 
 The script accepts the following arguments:
-- **Target**: Determines which tests to run.
-  - `original`: Executes only the existing unit tests inside the `Mzinga/src` project.
-  - `new`: Executes only the new tests added inside the `Tests` folder.
-  - `all`: Executes both the original and new tests sequentially.
-- **-Visualize**: If provided, it generates an HTML coverage report using ReportGenerator and automatically opens it in the default web browser. If Target argument is not provided, script will just visualize the last generated report, if it exists.
+- **`Target`**: Indicates which context of tests to evaluate. Results and reports are separately cached under `Results/{Target}` and `CoverageReport/{Target}` directories.
+  - `original`: Evaluates only existing unit tests located in the `Mzinga/src` folder.
+  - `new`: Evaluates only the new tests located in the `Tests` folder.
+  - `all` (default): Evaluates both original and new tests.
+- **`-Visualize`**: Generates an HTML coverage report based on the selected target's results and opens it in the browser.
+- **`-Rerun`**: Deletes the previous results and runs them from scratch. By default, the script skips test execution if results already exist for the selected target.
+- **`-Clean`**: Deletes all test results and coverage reports for all targets. If provided, all other arguments are ignored.
 
-### Current coverage baseline
+### **Current coverage baseline**
 
 Before introducing additional unit tests to the codebase, it is crucial to establish the current test coverage baseline. We will run only the original tests and generate the visual report:
 
@@ -24,7 +26,7 @@ Before introducing additional unit tests to the codebase, it is crucial to estab
 [Image 1](#img1) displays general code coverage results, before introducing new tests. We can see that around two thirds of lines (68%) and branches (64%) are covered, which is a good start but can be improved.
 
 <figure id="img1" style="text-align: center;">
-  <img src="./Tests/Results/Images/report1.png" alt="Original code coverage general results">
+  <img src="./Tests/Images/report1.png" alt="Original code coverage general results">
   <figcaption>Image 1: Original code coverage general results</figcaption>
 </figure>
 
@@ -38,6 +40,6 @@ On the other hand, there are classes that are not covered as much or not covered
 4. Utility classes: Simple utility structures like `Mzinga.AppInfo`, `Mzinga.VersionUtils`, `Mzinga.Core.CacheMetricsSet` and `Mzinga.Core.MoveSet` currently have 0% coverage but require minimal effort to verify.
 
 <figure id="img2" style="text-align: center;">
-  <img src="./Tests/Results/Images/report2.png" alt="Original code coverage detailed results">
+  <img src="./Tests/Images/report2.png" alt="Original code coverage detailed results">
   <figcaption>Image 2: Original code coverage detailed results</figcaption>
 </figure>
