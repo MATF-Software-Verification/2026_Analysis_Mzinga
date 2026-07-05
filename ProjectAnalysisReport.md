@@ -40,16 +40,39 @@ On the other hand, there are classes that are not covered as much or not covered
 4. Utility classes: Simple utility structures like `Mzinga.AppInfo`, `Mzinga.VersionUtils`, `Mzinga.Core.CacheMetricsSet` and `Mzinga.Core.MoveSet` currently have 0% coverage but require minimal effort to verify.
 
 <figure id="img2" style="text-align: center;">
-  <img src="./Tests/Results/Images/report2.png" alt="Original code coverage detailed results">
+  <img src="./Tests/Images/report2.png" alt="Original code coverage detailed results">
   <figcaption>Image 2: Original code coverage detailed results</figcaption>
 </figure>
 
 ### **Adding new tests**
 
-A new unit test project named `Mzinga.Tests.New` was initialized within the `Tests` directory. This MSTest project will hold new tests focused on covering lines and branches the original tests do not cover.
+A new unit test project named `Mzinga.Tests.New` was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
 
-To address the missing coverage in the `Mzinga.Engine` namespace, the following tests were added for the `EngineConfig` class:
+#### **EngineConfig**
+This class handles engine configurations, validation and storing parameters like `MaxHelperThreads` and `GameAI` metrics.
+-   **`EngineConfig_DefaultConstructor`**: Verifies that when an `EngineConfig` is initialized using its default constructor, essential properties like `MetricWeightSet` are instantiated and core fallbacks are behaving as expected.
+-   **`EngineConfig_LoadConfig_ValidXmlStream`**: Tests the parsing functionality of the config system. It provides an in-memory stream containing an XML configuration matching the `GameAI` schema and verifies that options like `MaxBranchingFactor`, `MaxHelperThreads`, and enumerations like `PonderDuringIdle` are correctly read without errors and mapped on the resulting configuration state.
+-   **`EngineConfig_LoadConfig_InvalidXmlStream`**: Checks the robustness of the parsing mechanism by intentionally providing malformed XML config payload (missing closing tag). It tests if the code throws a `System.Xml.XmlException` to avoid application corruption.
+-   **`EngineConfig_ParseMaxHelperThreads`**: Checks variations of parsing `MaxHelperThreads` edge values.
+-   **`EngineConfig_GetOptionsClone`**: Validates deep cloning for game settings ensuring config state boundaries.
+-   **`EngineConfig_CopyOptionsFrom`**: Ensures properties are copied successfully between varying configuration states.
+-   **`EngineConfig_SaveConfig`**: Serializes active configuration internally and confirms that the output stream stores configurations appropriately.
 
-*   **`DefaultConstructor_InitializeCorrectly`**: Verifies that when an `EngineConfig` is initialized using its default constructor, essential properties like internal `MetricWeightSet` are instantiated, core constant fallbacks (`DefaultMaxHelperThreads` and `DefaultReportIntermediateBestMoves`) are behaving as expected and `MaxBranchingFactor` defaults correctly to null.
-*   **`LoadConfig_WithValidXmlStream_LoadsOptions`**: Tests the parsing functionality of the config system. It provides an in-memory stream containing an XML configuration matching the `GameAI` schema and verifies that options like `MaxBranchingFactor`, `MaxHelperThreads`, and enumerations like `PonderDuringIdle` are correctly read without errors and mapped on the resulting configuration state.
-*   **`LoadConfig_WithInvalidXmlStream_ThrowsXmlException`**: Checks the robustness of the parsing mechanism by intentionally providing malformed XML config payload (missing closing tag). It tests if the code throws a `System.Xml.XmlException` to avoid silent application corruption.
+#### **Engine**
+The main coordinator handling inputs and output stream communications based on Universal Hive Protocol. The real target in code is a standard output stream, so all Engine tests utilize a `MockConsoleOut` delegate. This allows simulating and observing terminal output without requiring real environment attachments, validating if correct strings are yielded safely and checking if states internally persist correctly per command.
+-   **`Engine_Constructor`**: Confirms safe initialization without active games.
+-   **`Engine_ParseCommand_Info`**: Validates the standard "info" command parses and yields correct output engine identification strings.
+-   **`Engine_ParseCommand_Help`**: Triggers different variations of the "help" protocol. It checks the basic `help` and detailed `help command_name` commands and asserts that invalid variations return a `CommandException`.
+-   **`Engine_ParseCommand_NewGame` / `Engine_ParseCommand_NewGameWithGameType` / `Engine_ParseCommand_NewGameWithGameString`**: Dispatches new game requests ensuring boards and game states are properly instantiated internally with default settings, specific game types or state strings.
+-   **`Engine_ParseCommand_Exit`**: Tests if the "exit" command triggers the shutdown request.
+-   **`Engine_ParseCommand_Invalid`**: Ensures that invalid commands produce an error string output.
+-   **`Engine_ParseCommand_Licences`**: Checks the specific licenses commands and verifies that configured license contents are emitted on execution.
+-   **`Engine_ParseCommand_NoBoardException` / `Engine_ParseCommand_Pass_NoBoardWhenNoGame` / `Engine_ParseCommand_Play_NoBoardWhenNoGame`**: Verifies that issuing commands requiring an active board (`validmoves`, `play`, `pass`) before calling `newgame` outputs the expected "No game in progress" error message.
+-   **`Engine_ParseCommand_PlayWithoutArgs` / `Engine_ParseCommand_UndoWithoutArgs`**: Checks responses against playing and undoing actions when completely missing target parameters.
+-   **`Engine_ParseCommand_UndoInvalidNumberOfMovesException`**: Tests the error handling when attempting to `undo` more moves than have been played, ensuring the specific "Unable to undo N moves" error message.
+-   **`Engine_ParseCommand_PlayUndo`**: Confirms correct undoing of the last played move.
+-   **`Engine_ParseCommand_PerftInvalidDepthException` / `Engine_ParseCommand_PerftWithArgs`**: Checks limits on `perft` command depth, ensuring failure prints for invalid negative values and accepting valid depth values.
+-   **`Engine_ParseCommand_BestMoveTime`**: Confirms executing constrained limited best moves queries returns successfully against initialized boards. 
+-   **`Engine_ParseCommand_ArgumentNullException`**: Validates the core engine loop against empty inputs, asserting that an `ArgumentNullException` is directly thrown on malformed arguments.
+-   **`Engine_ParseCommand_BestMoveWithInvalidArgs_CommandException` / `Engine_ParseCommand_OptionsWithInvalidArgs_CommandException`**: Checks if misformatted protocol variations yield expected error messages.
+-   **`Engine_ParseCommand_Options` / `Engine_ParseCommand_OptionsGet` / `Engine_ParseCommand_OptionsSet`**: An aggregate check around `options` command variations. Assigns valid string configurations like variables, depths, flag bounds to confirm states propagate directly to the Engine's main config structure. Incorporates multithreading behavior checks, bounds checks and exception logic flow ensuring invalid inputs are handled as an `ArgumentException`.
