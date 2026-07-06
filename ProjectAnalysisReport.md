@@ -76,3 +76,18 @@ The main coordinator handling inputs and output stream communications based on U
 -   **`Engine_ParseCommand_ArgumentNullException`**: Validates the core engine loop against empty inputs, asserting that an `ArgumentNullException` is directly thrown on malformed arguments.
 -   **`Engine_ParseCommand_BestMoveWithInvalidArgs_CommandException` / `Engine_ParseCommand_OptionsWithInvalidArgs_CommandException`**: Checks if misformatted protocol variations yield expected error messages.
 -   **`Engine_ParseCommand_Options` / `Engine_ParseCommand_OptionsGet` / `Engine_ParseCommand_OptionsSet`**: An aggregate check around `options` command variations. Assigns valid string configurations like variables, depths, flag bounds to confirm states propagate directly to the Engine's main config structure. Incorporates multithreading behavior checks, bounds checks and exception logic flow ensuring invalid inputs are handled as an `ArgumentException`.
+
+#### **GameMetadata**
+Manages metadata tags embedded inside games containing event specifics, usernames, results and move commentaries.
+-   **`GameMetaData_SetTag` / `GameMetaData_GetTag`**: Checks boundary validation on adding fields and verifying string consistency on retrieval.
+-   **`GameMetaData_SetTag_ArgumentNullException`**: Checks exception propagation when providing null tag arguments.
+-   **`GameMetaData_MoveCommentary`**: Tests move comments are correctly added.
+-   **`GameMetaData_Clone`**: Checks tags and structures deep copying.
+
+#### **AppInfo**
+Utility container storing read-only product and assembly version info.
+-   **`AppInfo_Properties`**: Validates that all metadata strings (including Hive and MIT internal License Texts, Assembly paths and Version numbers) are non-null and correctly populated.
+
+#### **MoveSet**
+Utility container holding distinct potential movements in memory using arrays.
+-   **`MoveSet_Add` / `MoveSet_Clear`**: Checks if adding and clearing moves to the move set works correctly. Relies on reflection, because `MoveSet` methods are private
