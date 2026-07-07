@@ -91,3 +91,32 @@ Utility container storing read-only product and assembly version info.
 #### **MoveSet**
 Utility container holding distinct potential movements in memory using arrays.
 -   **`MoveSet_Add` / `MoveSet_Clear`**: Checks if adding and clearing moves to the move set works correctly. Relies on reflection, because `MoveSet` methods are private
+
+### **Results and comparison**
+
+After adding the new unit tests, we ran the test suite against both the original and new tests using the script:
+
+```powershell
+.\Tests\run_tests.ps1 all -Visualize
+```
+
+The general coverage results have significantly improved. As we can see in [Image 3](#img3), line coverage increased from 68.4% to 83.3%, and branch coverage increased from 64.4% to 80.4%. This successfully achieved our goal of reaching over 80% total code coverage.
+
+<figure id="img3" style="text-align: center;">
+  <img src="./Tests/Images/report3.png" alt="Final code coverage general results">
+  <figcaption>Image 3: Final code coverage general results</figcaption>
+</figure>
+
+Looking at the detailed results for the classes where tests were added, we achieved substantial improvements:
+- **`Mzinga.Engine.Engine`** increased from 0% to 66.4% line coverage.
+- **`Mzinga.Engine.EngineConfig`** increased from 39.5% to 83.5% line coverage.
+- **`CommandException`**, **`NoBoardException`**, **`PerfInvalidDepthException`** and **`UndoInvalidNumberOfMovesException`** all increased from 0% to 100% line coverage.
+- **`Mzinga.Core.GameMetadata`**: increased from 50% to 66.1% line coverage.
+- **`Mzinga.AppInfo`** increased from 0% to 100% line coveragey.
+- **`Mzinga.VersionUtils`** increased from 0% to 52.9% line coverage.
+- **`Mzinga.Core.MoveSet`** increased from 0% to 45% line coverage.
+
+<figure id="img4" style="text-align: center;">
+  <img src="./Tests/Images/report4.png" alt="Final code coverage detailed results">
+  <figcaption>Image 4: Final code coverage detailed results</figcaption>
+</figure>
