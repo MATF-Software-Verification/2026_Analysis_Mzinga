@@ -120,3 +120,14 @@ Looking at the detailed results for the classes where tests were added, we achie
   <img src="./Tests/Images/report4.png" alt="Final code coverage detailed results">
   <figcaption>Image 4: Final code coverage detailed results</figcaption>
 </figure>
+
+## **Code formatting**
+
+To format the code and apply style checks, the **`dotnet format`** tool from the .NET SDK is used. To streamline formatting and style verification a PowerShell script `dotnet_format.ps1` was created. This script applies custom styling rules from the local `.editorconfig` format file, runs the format or check process and generates detailed reports. The custom configuration (`.editorconfig`) and the execution script are located in the `DotnetFormat` directory.
+
+The script accepts the following arguments:
+- **`Mode`** (required): Determines the type of formatting execution.
+  - `check`: Runs in a verify-only mode. It reports errors and generates a log without modifying original source code.
+  - `apply`: Directly formats and modifies the `.cs` files according to the rules defined in the `.editorconfig` file and applies the changes to the source repository.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the `DotnetFormat/Results` folder where the output report will be saved.
+- **`-Visualize`**: Translates the generated JSON report into an HTML document and automatically opens it in the default web browser.
