@@ -48,11 +48,11 @@ Write-Host "=============================================`n" -ForegroundColor Gr
 
 if ($Mode -eq "check")
 {
-    dotnet format style $SlnPath --verify-no-changes --report $ReportOutputDir
+    dotnet format $SlnPath --verify-no-changes --report $ReportOutputDir
 }
 else
 {
-    dotnet format style $SlnPath --severity warn --report $ReportOutputDir
+    dotnet format $SlnPath --severity warn --report $ReportOutputDir
 }
 
 Write-Host "`nOperation complete. Reports are located in: $ReportOutputDir`n" -ForegroundColor Green

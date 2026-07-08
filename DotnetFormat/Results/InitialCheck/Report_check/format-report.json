@@ -1,0 +1,4130 @@
+[
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 16,
+        "CharNumber": 98,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "dc2e8cd9-5bbf-41c5-8569-449f87f11952"
+    },
+    "FileName": "Trainer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Trainer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 625,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 18 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 773,
+        "CharNumber": 80,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 1221,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 26 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "a72dd022-dce6-48e8-a732-928612804b6f"
+    },
+    "FileName": "TrainerSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\TrainerSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 103,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 17 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "30df7cd9-8030-4d16-82a8-4123f427925c"
+    },
+    "FileName": "BoardTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\BoardTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 448,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 26 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "2af14518-e8d7-43b1-8b79-b99e417b448f"
+    },
+    "FileName": "GameAITests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\GameAITests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 160,
+        "CharNumber": 49,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 216,
+        "CharNumber": 41,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      },
+      {
+        "LineNumber": 234,
+        "CharNumber": 41,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "7c40adc5-c2a8-4e7c-8a25-d883d5b8f251"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 106,
+        "CharNumber": 45,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "0f1e25b6-0374-4cf2-b3d5-14521180a059"
+    },
+    "FileName": "TestUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\TestUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 14,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\r\\n\u0027."
+      },
+      {
+        "LineNumber": 72,
+        "CharNumber": 23,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "db105143-9017-4902-a136-73d50a837852"
+    },
+    "FileName": "App.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\App.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 83,
+        "CharNumber": 37,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 1 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0a4f2c9f-f424-4592-a9b3-d755092fbe9f"
+    },
+    "FileName": "BoardExtensions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\BoardExtensions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 61,
+        "CharNumber": 40,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "b3f03a18-0b93-4e61-a1f8-fe68408033a6"
+    },
+    "FileName": "HexShape.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Controls\\HexShape.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 74,
+        "CharNumber": 57,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 1 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "c8723dab-a67b-4c56-9026-69ac40fbe98f"
+    },
+    "FileName": "EnumMatchToBooleanConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\EnumMatchToBooleanConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 44,
+        "CharNumber": 6,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 3 characters with \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "09ab7130-2b59-4ff2-924b-19b957855b5d"
+    },
+    "FileName": "TimeSpanToDecimalConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\TimeSpanToDecimalConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 6,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 3 characters with \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e4bdcc5c-10e0-4306-ba99-6150cd4bc5a9"
+    },
+    "FileName": "EngineCapabilities.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineCapabilities.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 35,
+        "CharNumber": 26,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 45 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "a9121dd6-ef9b-4bcd-8966-8a4368ab185a"
+    },
+    "FileName": "EngineOptions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineOptions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 90,
+        "CharNumber": 50,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 104,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 42 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 178,
+        "CharNumber": 39,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 7 characters with \u0027\\r\\n\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "9a4c3984-78ac-4945-9586-0f2bcb3ab421"
+    },
+    "FileName": "EngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 359,
+        "CharNumber": 160,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 359,
+        "CharNumber": 214,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0b42671d-f735-4a08-b7df-548822189804"
+    },
+    "FileName": "GameSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\GameSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 179,
+        "CharNumber": 52,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "1deb0de4-f7b4-408a-9e4d-28d62ba25f95"
+    },
+    "FileName": "MessageHandlers.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\MessageHandlers.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 64,
+        "CharNumber": 63,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 64,
+        "CharNumber": 93,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 86,
+        "CharNumber": 65,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 86,
+        "CharNumber": 95,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "aebd1b7e-cb6e-4d2e-9bd6-13260ff30378"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 54,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 32,
+        "CharNumber": 99,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "d1fb8106-0a5b-4774-bedc-56e67518541e"
+    },
+    "FileName": "ColorUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\ColorUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 6,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "6c1dea7f-af4a-4c46-9d7a-759d7c53a129"
+    },
+    "FileName": "SoundUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\SoundUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 15,
+        "CharNumber": 86,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 15,
+        "CharNumber": 96,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 37,
+        "CharNumber": 41,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 37,
+        "CharNumber": 50,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 42,
+        "CharNumber": 43,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 42,
+        "CharNumber": 52,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "081a95fb-a632-4648-a25e-7f8782c63cf7"
+    },
+    "FileName": "UpdateUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\UpdateUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 28,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 18 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 145,
+        "CharNumber": 40,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 145,
+        "CharNumber": 58,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 145,
+        "CharNumber": 63,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 145,
+        "CharNumber": 70,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0adb33b9-2f07-4581-84e7-d08ad35e1d3e"
+    },
+    "FileName": "AppViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\AppViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 19,
+        "CharNumber": 56,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 21,
+        "CharNumber": 55,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 132,
+        "CharNumber": 107,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 132,
+        "CharNumber": 111,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 185,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 186,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 10 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "85f353e4-0f67-46bb-8288-839bf8819c6e"
+    },
+    "FileName": "EngineConsoleViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\EngineConsoleViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 78,
+        "CharNumber": 74,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 44 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e5e9f98e-9611-426d-840f-f50c3c6e4872"
+    },
+    "FileName": "InformationViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\InformationViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 8,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "56132379-2519-40c9-8912-44b5662097ad"
+    },
+    "FileName": "MainViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\MainViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 13,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\r\\n\u0027."
+      },
+      {
+        "LineNumber": 395,
+        "CharNumber": 22,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      },
+      {
+        "LineNumber": 1227,
+        "CharNumber": 22,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 26 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 1228,
+        "CharNumber": 57,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 26 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 1230,
+        "CharNumber": 25,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 4 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "fdf5f59b-c581-47a2-bddc-ef9047898d31"
+    },
+    "FileName": "ObservableEngineOption.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableEngineOption.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 91,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 34 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 182,
+        "CharNumber": 74,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 182,
+        "CharNumber": 77,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "a9c39380-423c-4f3e-b3a7-3d5a5b7a444b"
+    },
+    "FileName": "ViewerConfigViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ViewerConfigViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 439,
+        "CharNumber": 22,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 764,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 50 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "30cc702a-43e1-4c54-a5bc-56565ad1341e"
+    },
+    "FileName": "AssemblyUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\AssemblyUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 31,
+        "CharNumber": 71,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      },
+      {
+        "LineNumber": 31,
+        "CharNumber": 80,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "6dda5589-c3ff-4a12-8ff2-a1fe7da395f8"
+    },
+    "FileName": "EvaluatedMoveCollection.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\EvaluatedMoveCollection.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 18,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 1 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "bc13dddb-f1ce-4427-aecb-8e56bbae0562"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 36,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 26 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 352,
+        "CharNumber": 74,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      },
+      {
+        "LineNumber": 775,
+        "CharNumber": 12,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "ad094174-5ce0-48ca-8094-5c5be3a371a4"
+    },
+    "FileName": "MetricWeights.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\MetricWeights.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 60,
+        "CharNumber": 23,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "18c83088-0ea3-4790-b6d7-489c4fdacdaa"
+    },
+    "FileName": "Board.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Board.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 88,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 18 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "f9e77670-8680-498c-bf67-0cd106b5abdd"
+    },
+    "FileName": "FastSet.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FastSet.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 11,
+        "CharNumber": 61,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Insert \u0027\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "997016d3-f255-4f38-9fb5-8a4acc7f7a6e"
+    },
+    "FileName": "GameRecording.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\GameRecording.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 2 characters with \u0027\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 402,
+        "CharNumber": 38,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 35 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "576716ee-2b27-4e7b-a172-fe7f23fc95e8"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 301,
+        "CharNumber": 41,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 34 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "b6e11543-fc00-41bf-9614-0feb0fd0f1cd"
+    },
+    "FileName": "EngineConfig.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\EngineConfig.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 88,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 42 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 268,
+        "CharNumber": 1,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Replace 26 characters with \u0027\\r\\n\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\\s\u0027."
+      },
+      {
+        "LineNumber": 475,
+        "CharNumber": 14,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 21 characters."
+      },
+      {
+        "LineNumber": 476,
+        "CharNumber": 22,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 13 characters."
+      },
+      {
+        "LineNumber": 477,
+        "CharNumber": 23,
+        "DiagnosticId": "WHITESPACE",
+        "FormatDescription": "Fix whitespace formatting. Delete 12 characters."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "bed39c86-c478-4c1c-aee6-71e41bd560e2"
+    },
+    "FileName": "SigIntMonitor.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\SigIntMonitor.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 65,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "9327fa56-25fc-41a6-8af3-a10fddde54b6"
+    },
+    "FileName": "BugShape.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Controls\\BugShape.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 52,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "b3f03a18-0b93-4e61-a1f8-fe68408033a6"
+    },
+    "FileName": "HexShape.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Controls\\HexShape.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 88,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "996c4db6-bfec-4bf8-bc9c-a315e9edb9e2"
+    },
+    "FileName": "TileControl.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Controls\\TileControl.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 304,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "c941cfdf-0507-4c80-a4fa-66220c9eacc4"
+    },
+    "FileName": "BoolToFontStyleConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\BoolToFontStyleConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "ec18cf04-2a8c-43ba-aeed-45d9a9c2230e"
+    },
+    "FileName": "BoolToFontWeightConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\BoolToFontWeightConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "506fc95f-b2d9-46c4-9595-f2050c57132a"
+    },
+    "FileName": "IdleBoolToWaitCursorConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\IdleBoolToWaitCursorConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "081a95fb-a632-4648-a25e-7f8782c63cf7"
+    },
+    "FileName": "UpdateUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\UpdateUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 227,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "49328dee-484b-47ce-abae-cc41a6cc3801"
+    },
+    "FileName": "Enums.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Enums.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 427,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "f9e77670-8680-498c-bf67-0cd106b5abdd"
+    },
+    "FileName": "FastSet.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FastSet.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 77,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "5248409d-b115-40a7-b82b-f2b52187b063"
+    },
+    "FileName": "MoveSet.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\MoveSet.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 37,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "5762f47e-f8d6-424c-987d-b68fac658761"
+    },
+    "FileName": "PositionSet.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\PositionSet.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 14,
+        "CharNumber": 2,
+        "DiagnosticId": "FINALNEWLINE",
+        "FormatDescription": "Fix final newline. Insert \u0027\\r\\n\u0027."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "bed39c86-c478-4c1c-aee6-71e41bd560e2"
+    },
+    "FileName": "SigIntMonitor.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\SigIntMonitor.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "92514794-c03f-4461-8d88-75befb0fa005"
+    },
+    "FileName": "EloUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\EloUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "3c328efe-50f8-4a99-9aa6-b21424cafce7"
+    },
+    "FileName": "Profile.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Profile.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "bd7512b1-38be-4050-a722-d793a9f49f05"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "dc2e8cd9-5bbf-41c5-8569-449f87f11952"
+    },
+    "FileName": "Trainer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Trainer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "a72dd022-dce6-48e8-a732-928612804b6f"
+    },
+    "FileName": "TrainerSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\TrainerSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "30df7cd9-8030-4d16-82a8-4123f427925c"
+    },
+    "FileName": "BoardTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\BoardTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "2af14518-e8d7-43b1-8b79-b99e417b448f"
+    },
+    "FileName": "GameAITests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\GameAITests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "d484c8f7-6f19-48e4-b800-2e56d8ff70c1"
+    },
+    "FileName": "GameRecordingTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\GameRecordingTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "7b33ee8f-af00-4d7a-b22c-0fd1c0ed32bb"
+    },
+    "FileName": "MetricWeightsTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MetricWeightsTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "7c40adc5-c2a8-4e7c-8a25-d883d5b8f251"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "94b9d2e6-8384-4359-b2e3-c1c9e9bf0d58"
+    },
+    "FileName": "PositionTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\PositionTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "3c70f7f5-97ed-4c62-bec2-aa0c5716d7eb"
+    },
+    "FileName": "PuzzleCandidateTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\PuzzleCandidateTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "0f1e25b6-0374-4cf2-b3d5-14521180a059"
+    },
+    "FileName": "TestUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\TestUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "e2953a88-c925-4dff-abbd-e92e57bdda84"
+    },
+    "FileName": "TranspositionTableTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\TranspositionTableTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0a4f2c9f-f424-4592-a9b3-d755092fbe9f"
+    },
+    "FileName": "BoardExtensions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\BoardExtensions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "6eef5c96-a049-4753-9ce6-4bd3257c8f1f"
+    },
+    "FileName": "CLIEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\CLIEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "c941cfdf-0507-4c80-a4fa-66220c9eacc4"
+    },
+    "FileName": "BoolToFontStyleConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\BoolToFontStyleConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "ec18cf04-2a8c-43ba-aeed-45d9a9c2230e"
+    },
+    "FileName": "BoolToFontWeightConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\BoolToFontWeightConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "c8723dab-a67b-4c56-9026-69ac40fbe98f"
+    },
+    "FileName": "EnumMatchToBooleanConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\EnumMatchToBooleanConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "506fc95f-b2d9-46c4-9595-f2050c57132a"
+    },
+    "FileName": "IdleBoolToWaitCursorConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\IdleBoolToWaitCursorConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "09ab7130-2b59-4ff2-924b-19b957855b5d"
+    },
+    "FileName": "TimeSpanToDecimalConverter.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Converters\\TimeSpanToDecimalConverter.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e4bdcc5c-10e0-4306-ba99-6150cd4bc5a9"
+    },
+    "FileName": "EngineCapabilities.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineCapabilities.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "a9121dd6-ef9b-4bcd-8966-8a4368ab185a"
+    },
+    "FileName": "EngineOptions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineOptions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "9a4c3984-78ac-4945-9586-0f2bcb3ab421"
+    },
+    "FileName": "EngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "83414867-98bb-4e10-b5e2-0287eefc0d2a"
+    },
+    "FileName": "Exceptions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Exceptions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0b42671d-f735-4a08-b7df-548822189804"
+    },
+    "FileName": "GameSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\GameSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e28bfa09-f048-4333-ba51-96c06fcd3079"
+    },
+    "FileName": "InternalEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\InternalEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "1deb0de4-f7b4-408a-9e4d-28d62ba25f95"
+    },
+    "FileName": "MessageHandlers.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\MessageHandlers.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "d1fb8106-0a5b-4774-bedc-56e67518541e"
+    },
+    "FileName": "ColorUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\ColorUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "eddeb746-b6d8-433a-a47e-0d0f50d90e1b"
+    },
+    "FileName": "ExceptionUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\ExceptionUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "386cbb6d-184f-43ad-8ded-c42ea36cfa45"
+    },
+    "FileName": "PositionUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\PositionUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "6c1dea7f-af4a-4c46-9d7a-759d7c53a129"
+    },
+    "FileName": "SoundUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\SoundUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "081a95fb-a632-4648-a25e-7f8782c63cf7"
+    },
+    "FileName": "UpdateUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Utils\\UpdateUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "d77d561e-9a2a-4531-b0c3-b63c381d358f"
+    },
+    "FileName": "ViewerConfig.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewerConfig.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "dd3ee412-0b9a-4cea-8c57-e247072f70fa"
+    },
+    "FileName": "AboutViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\AboutViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0adb33b9-2f07-4581-84e7-d08ad35e1d3e"
+    },
+    "FileName": "AppViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\AppViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "f81a4110-cedb-49a1-bfc8-d502928dc667"
+    },
+    "FileName": "ConfirmationViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ConfirmationViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "85f353e4-0f67-46bb-8288-839bf8819c6e"
+    },
+    "FileName": "EngineConsoleViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\EngineConsoleViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "a2b8cdb3-1ae4-433c-9b51-3dca216a49b9"
+    },
+    "FileName": "EngineOptionsViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\EngineOptionsViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "753f1881-075c-4524-ab34-e7ed6be148c0"
+    },
+    "FileName": "ExceptionViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ExceptionViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "c6851ae9-9589-424f-b633-2132917e4758"
+    },
+    "FileName": "GameMetadataViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\GameMetadataViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e5e9f98e-9611-426d-840f-f50c3c6e4872"
+    },
+    "FileName": "InformationViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\InformationViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "32b76849-8be3-4c47-9dcd-5243b783a184"
+    },
+    "FileName": "InformationViewModelBase.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\InformationViewModelBase.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "56132379-2519-40c9-8912-44b5662097ad"
+    },
+    "FileName": "MainViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\MainViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e67e26b0-e32a-42b8-be55-a5cdac7e0bab"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "5cd08bbf-267a-40a8-ae55-87e094a436b9"
+    },
+    "FileName": "NewGameViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\NewGameViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e62556e5-f411-43fe-b404-71fa03767a17"
+    },
+    "FileName": "ObservableAboutTabItem.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableAboutTabItem.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "5cfef846-4575-43ee-a0c6-77586c7200c3"
+    },
+    "FileName": "ObservableBoardHistory.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableBoardHistory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "fdf5f59b-c581-47a2-bddc-ef9047898d31"
+    },
+    "FileName": "ObservableEngineOption.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableEngineOption.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "13d9e8f0-a6a0-49d2-a16d-9b7defb8400e"
+    },
+    "FileName": "ObservableGameMetadataTag.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableGameMetadataTag.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "a9c39380-423c-4f3e-b3a7-3d5a5b7a444b"
+    },
+    "FileName": "ViewerConfigViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ViewerConfigViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "ca47e6fb-bc0d-4e1e-99fb-c67eecac4208"
+    },
+    "FileName": "AboutWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\AboutWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "66c887c5-3e48-443d-b684-fb66e03f6da4"
+    },
+    "FileName": "ConfirmationWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\ConfirmationWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "608eb4cc-f4fa-42ce-990c-0acb4a81bfc7"
+    },
+    "FileName": "EngineConsoleWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\EngineConsoleWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "31305de8-35ad-4acb-8f3f-ec3a9f7d7222"
+    },
+    "FileName": "EngineOptionsWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\EngineOptionsWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "4d7636a8-eadc-4bd4-8877-2c614c60358c"
+    },
+    "FileName": "GameMetadataWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\GameMetadataWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "8d2c454e-20be-463f-b404-43f626804717"
+    },
+    "FileName": "InformationWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\InformationWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "d649e302-bf34-4d9f-947d-b6b8b8c3891d"
+    },
+    "FileName": "NewGameWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\NewGameWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "d1d08824-07f1-40ea-a4a0-ee2e60d26e07"
+    },
+    "FileName": "ViewerConfigWindow.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Views\\ViewerConfigWindow.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "10751605-c477-4027-a7e3-c99b31df612b"
+    },
+    "FileName": "AppInfo.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\AppInfo.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "30cc702a-43e1-4c54-a5bc-56565ad1341e"
+    },
+    "FileName": "AssemblyUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\AssemblyUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "a3e18c4a-74be-4c03-a4da-818db97f6dfc"
+    },
+    "FileName": "EvaluatedMove.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\EvaluatedMove.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "6dda5589-c3ff-4a12-8ff2-a1fe7da395f8"
+    },
+    "FileName": "EvaluatedMoveCollection.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\EvaluatedMoveCollection.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "bc13dddb-f1ce-4427-aecb-8e56bbae0562"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "6082742d-e477-403a-a7e5-b004310d2fab"
+    },
+    "FileName": "GameAIConfig.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAIConfig.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "ad094174-5ce0-48ca-8094-5c5be3a371a4"
+    },
+    "FileName": "MetricWeights.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\MetricWeights.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "985f25e1-76f1-42c3-be4b-f9a551447279"
+    },
+    "FileName": "TranspositionTable.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\TranspositionTable.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "4d9f4104-0897-4242-a8e3-2485eb339772"
+    },
+    "FileName": "BoardHistory.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\BoardHistory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "e97ea9ca-b6e5-4165-972a-077d63c72c7d"
+    },
+    "FileName": "BoardMetrics.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\BoardMetrics.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "066c47c0-ccf3-4b98-b8c5-c8c25682f7a9"
+    },
+    "FileName": "CacheMetrics.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\CacheMetrics.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "01253748-407d-4e4c-8ce6-b94aa05b3f19"
+    },
+    "FileName": "CacheMetricsSet.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\CacheMetricsSet.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "5a923076-484c-4c51-b046-60bb7b5ec4a7"
+    },
+    "FileName": "FixedCache.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FixedCache.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "ba8c4101-983e-4321-9700-28d78ab5fb5c"
+    },
+    "FileName": "GameMetadata.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\GameMetadata.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "997016d3-f255-4f38-9fb5-8a4acc7f7a6e"
+    },
+    "FileName": "GameRecording.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\GameRecording.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "b64bab64-6bb1-41d4-a9d1-41fcbb6eb5ce"
+    },
+    "FileName": "PieceMetrics.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\PieceMetrics.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "96c92d8d-90a3-4d99-a5e2-901380be853a"
+    },
+    "FileName": "PuzzleCandidate.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\PuzzleCandidate.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "51991f0e-3f31-48b5-99ac-b1bd681d7081"
+    },
+    "FileName": "ZobristHash.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\ZobristHash.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "576716ee-2b27-4e7b-a172-fe7f23fc95e8"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "b6e11543-fc00-41bf-9614-0feb0fd0f1cd"
+    },
+    "FileName": "EngineConfig.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\EngineConfig.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "ce2962a9-9499-4bdb-9694-cea4ea32430d"
+    },
+    "FileName": "ListExtensions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\ListExtensions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "83aba0ec-fbf7-42ba-a93b-81a4f8decd7e"
+    },
+    "FileName": "VersionUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\VersionUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "CHARSET",
+        "FormatDescription": "Fix file encoding."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "0f1e25b6-0374-4cf2-b3d5-14521180a059"
+    },
+    "FileName": "TestUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\TestUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "IMPORTS",
+        "FormatDescription": "Fix imports ordering."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "6eef5c96-a049-4753-9ce6-4bd3257c8f1f"
+    },
+    "FileName": "CLIEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\CLIEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "IMPORTS",
+        "FormatDescription": "Fix imports ordering."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "56132379-2519-40c9-8912-44b5662097ad"
+    },
+    "FileName": "MainViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\MainViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "IMPORTS",
+        "FormatDescription": "Fix imports ordering."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "5cd08bbf-267a-40a8-ae55-87e094a436b9"
+    },
+    "FileName": "NewGameViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\NewGameViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "IMPORTS",
+        "FormatDescription": "Fix imports ordering."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1,
+        "CharNumber": 1,
+        "DiagnosticId": "IMPORTS",
+        "FormatDescription": "Fix imports ordering."
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 12,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 14,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 24,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 92,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 97,
+        "CharNumber": 29,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 126,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "3761ec4a-4ed2-4e60-95e7-11854636a74e"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 90,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "73f4a39b-eff0-4ec3-b7d5-6ebf5d2d1e24"
+      },
+      "Id": "bed39c86-c478-4c1c-aee6-71e41bd560e2"
+    },
+    "FileName": "SigIntMonitor.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\SigIntMonitor.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 63,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "bd7512b1-38be-4050-a722-d793a9f49f05"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 13,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "bd7512b1-38be-4050-a722-d793a9f49f05"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 93,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "bd7512b1-38be-4050-a722-d793a9f49f05"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 110,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "bd7512b1-38be-4050-a722-d793a9f49f05"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 174,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "dc2e8cd9-5bbf-41c5-8569-449f87f11952"
+    },
+    "FileName": "Trainer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Trainer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1204,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "22b12561-eb03-429d-9be7-c3ab2abb525c"
+      },
+      "Id": "a72dd022-dce6-48e8-a732-928612804b6f"
+    },
+    "FileName": "TrainerSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\TrainerSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 98,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: The first word, \u0027GenerateCount\u0027, must begin with a lower case character"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "7c40adc5-c2a8-4e7c-8a25-d883d5b8f251"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "7c40adc5-c2a8-4e7c-8a25-d883d5b8f251"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 106,
+        "CharNumber": 56,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "223d5a9d-9f07-4a03-95eb-158135a6f5e9"
+      },
+      "Id": "7c40adc5-c2a8-4e7c-8a25-d883d5b8f251"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 115,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 16,
+        "CharNumber": 25,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 17,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 18,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 19,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 49,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 23,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 52,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 69,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 75,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 102,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 16,
+        "CharNumber": 25,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 19,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 17,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 49,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "8b6efdce-80ed-4ffe-ad1d-4cb06a533a60"
+      },
+      "Id": "4b64123e-51c7-4ea3-a8d6-49b1156cb7ef"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 18,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0a4f2c9f-f424-4592-a9b3-d755092fbe9f"
+    },
+    "FileName": "BoardExtensions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\BoardExtensions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 11,
+        "CharNumber": 18,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "a9121dd6-ef9b-4bcd-8966-8a4368ab185a"
+    },
+    "FileName": "EngineOptions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\EngineOptions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 51,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "aebd1b7e-cb6e-4d2e-9bd6-13260ff30378"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 11,
+        "CharNumber": 11,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "db105143-9017-4902-a136-73d50a837852"
+    },
+    "FileName": "App.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\App.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 150,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "6eef5c96-a049-4753-9ce6-4bd3257c8f1f"
+    },
+    "FileName": "CLIEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\CLIEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 157,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "6eef5c96-a049-4753-9ce6-4bd3257c8f1f"
+    },
+    "FileName": "CLIEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\CLIEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 156,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 34,
+        "CharNumber": 22,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 38,
+        "CharNumber": 33,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 40,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 43,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 30,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 31,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 76,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 75,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 80,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 81,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 83,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 78,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 746,
+        "CharNumber": 26,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e09dcfdd-d2a7-44d0-a291-429b591203a3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 33,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "85f353e4-0f67-46bb-8288-839bf8819c6e"
+    },
+    "FileName": "EngineConsoleViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\EngineConsoleViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 13,
+        "CharNumber": 57,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0b42671d-f735-4a08-b7df-548822189804"
+    },
+    "FileName": "GameSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\GameSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 180,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "0b42671d-f735-4a08-b7df-548822189804"
+    },
+    "FileName": "GameSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\GameSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 179,
+        "CharNumber": 37,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "9327fa56-25fc-41a6-8af3-a10fddde54b6"
+    },
+    "FileName": "BugShape.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Controls\\BugShape.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 40,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e67e26b0-e32a-42b8-be55-a5cdac7e0bab"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 117,
+        "CharNumber": 38,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e67e26b0-e32a-42b8-be55-a5cdac7e0bab"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 40,
+        "CharNumber": 39,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "e67e26b0-e32a-42b8-be55-a5cdac7e0bab"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 102,
+        "CharNumber": 48,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "e09416ca-ad89-417f-840a-b7c91d6d0178"
+      },
+      "Id": "5cfef846-4575-43ee-a0c6-77586c7200c3"
+    },
+    "FileName": "ObservableBoardHistory.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableBoardHistory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 59,
+        "CharNumber": 40,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "6dda5589-c3ff-4a12-8ff2-a1fe7da395f8"
+    },
+    "FileName": "EvaluatedMoveCollection.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\EvaluatedMoveCollection.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 10,
+        "CharNumber": 11,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "066c47c0-ccf3-4b98-b8c5-c8c25682f7a9"
+    },
+    "FileName": "CacheMetrics.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\CacheMetrics.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 9,
+        "CharNumber": 11,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "01253748-407d-4e4c-8ce6-b94aa05b3f19"
+    },
+    "FileName": "CacheMetricsSet.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\CacheMetricsSet.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 8,
+        "CharNumber": 11,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "51991f0e-3f31-48b5-99ac-b1bd681d7081"
+    },
+    "FileName": "ZobristHash.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\ZobristHash.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 8,
+        "CharNumber": 11,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "ce2962a9-9499-4bdb-9694-cea4ea32430d"
+    },
+    "FileName": "ListExtensions.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\ListExtensions.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 8,
+        "CharNumber": 18,
+        "DiagnosticId": "IDE0040",
+        "FormatDescription": "warning IDE0040: Accessibility modifiers required"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "a3e18c4a-74be-4c03-a4da-818db97f6dfc"
+    },
+    "FileName": "EvaluatedMove.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\EvaluatedMove.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 60,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "ad094174-5ce0-48ca-8094-5c5be3a371a4"
+    },
+    "FileName": "MetricWeights.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\MetricWeights.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 191,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "10acd0c2-1d21-431a-a0d5-26cf1b107e6a"
+    },
+    "FileName": "Position.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Position.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 35,
+        "CharNumber": 41,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "985f25e1-76f1-42c3-be4b-f9a551447279"
+    },
+    "FileName": "TranspositionTable.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\TranspositionTable.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 27,
+        "CharNumber": 38,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "997016d3-f255-4f38-9fb5-8a4acc7f7a6e"
+    },
+    "FileName": "GameRecording.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\GameRecording.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 497,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "5a923076-484c-4c51-b046-60bb7b5ec4a7"
+    },
+    "FileName": "FixedCache.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FixedCache.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 40,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "5a923076-484c-4c51-b046-60bb7b5ec4a7"
+    },
+    "FileName": "FixedCache.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FixedCache.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 166,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "bc13dddb-f1ce-4427-aecb-8e56bbae0562"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 945,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "bc13dddb-f1ce-4427-aecb-8e56bbae0562"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 27,
+        "CharNumber": 37,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "3154ec0e-c2fc-49e3-997e-d72377c0283a"
+      },
+      "Id": "bc13dddb-f1ce-4427-aecb-8e56bbae0562"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 946,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  }
+]

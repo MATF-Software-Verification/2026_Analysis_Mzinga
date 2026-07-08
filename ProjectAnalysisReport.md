@@ -4,7 +4,7 @@
 
 The **Mzinga** project utilizes the **MSTest** framework for its existing unit tests. Alongside the test framework, **Coverlet** is integrated as a cross-platform code coverage library for .NET. 
 
-To streamline the execution and reporting of unit tests, a PowerShell script `run_tests.ps1` was created in the `Tests` directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
+To streamline the execution and reporting of unit tests, a PowerShell script [run_tests.ps1](./Tests/run_tests.ps1) was created in the [Tests](./Tests) directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
 
 The script accepts the following arguments:
 - **`Target`**: Indicates which context of tests to evaluate. Results and reports are separately cached under `Results/{Target}` and `CoverageReport/{Target}` directories.
@@ -46,7 +46,7 @@ On the other hand, there are classes that are not covered as much or not covered
 
 ### **Adding new tests**
 
-A new unit test project named `Mzinga.Tests.New` was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
+A new unit test project named [Mzinga.Tests.New](./Tests/Mzinga.Tests.New) was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
 
 #### **EngineConfig**
 This class handles engine configurations, validation and storing parameters like `MaxHelperThreads` and `GameAI` metrics.
@@ -123,21 +123,78 @@ Looking at the detailed results for the classes where tests were added, we achie
 
 ## **Code formatting**
 
-The original Mzinga codebase contains an `.editorconfig` file in its `src/` directory. This existing configuration only disables a few specific C# features, such as implicit object creation, range operators, and switch expressions, but it completely lacks standard formatting rules to ensure code consistency.
+The original Mzinga codebase contains an [.editorconfig](./Mzinga/src/.editorconfig) file in its `src/` directory. This existing configuration only disables a few specific C# features, such as implicit object creation, range operators and switch expressions, but it completely lacks standard formatting rules to ensure code consistency.
 
-To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration (`.editorconfig`) is located in the `DotnetFormat` directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
-- **Encoding and spacing:** Forces UTF-8 representation, trailing whitespace removal and mandatory newline at the end of file. This is applied to all files, while following rules apply to `.cs` files only.
-- **Indentation:** Forces standard 4-space indentation across all code components.
-- **Newline structure:** Forces placing open braces on new lines for all control flow expressions (`if`, `else`, `catch`, `finally`, etc.). It also forces explicit new lines between query expression clauses.
-- **Layout rules:** Forces padding around binary operators, no spaces around declaration statements and no spaces between method parameter list parentheses or general parentheses. It also forces sorting of system directives first and separate import directive groups. It warns if braces are missing for single-line statements and warns about implicit access modifiers (requiring `public`, `private`, etc.).
-- **Naming conventions:** Warns if interfaces do not start with `I` and if private/internal fields do not start with an underscore.
-- **Modern syntax conventions:** Suggests modern `throw` expressions, null-coalescing (`??`) and null-conditional (`?.`) operators. It also suggests preferring `is null` checks over reference equality methods.
+To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration ([.editorconfig](./DotnetFormat/.editorconfig)) is located in the [DotnetFormat](./DotnetFormat) directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
+- **Encoding and spacing**: Forces UTF-8 representation, trailing whitespace removal and mandatory newlines at the end of file. This is applied to all files, while following rules apply to `.cs` files only.
+- **Indentation**: Forces standard 4-space indentation across all code components.
+- **Newline structure**: Forces placing open braces on new lines for all control flow expressions (`if`, `else`, `catch`, `finally`, etc.). It also forces explicit new lines between query expression clauses.
+- **Layout rules**: Forces padding around binary operators, no spaces around declaration statements and no spaces between method parameter list parentheses or general parentheses. It also forces sorting of system directives first and separate import directive groups. It warns if braces are missing for single-line statements and warns about implicit access modifiers (requiring `public`, `private`, etc.).
+- **Naming conventions**: Warns if interfaces do not start with `I` and if private/internal fields do not start with an underscore.
+- **Modern syntax conventions**: Warns if modern `throw` expressions, null-coalescing (`??`) and null-conditional (`?.`) operators should be used. It also checks if `is null` expressions are used instead of reference equality methods.
 
-To streamline formatting and style verification a PowerShell script (`dotnet_format.ps1`) was created. This script applies custom styling rules from the local `.editorconfig` format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
+To streamline formatting and style verification a PowerShell script ([dotnet_format.ps1](./DotnetFormat/dotnet_format.ps1)) was created. This script applies custom styling rules from the local [.editorconfig](./DotnetFormat/.editorconfig) format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of formatting execution.
   - `check`: Runs in a verify-only mode. It reports errors and generates a log without modifying original source code.
-  - `apply`: Directly formats and modifies the original files according to the rules defined in the `.editorconfig` file and applies the changes to the source repository.
-- **`TargetDir`** (required): Specifies the name of the subdirectory inside the `DotnetFormat/Results` folder where the output report will be saved.
+  - `apply`: Directly formats and modifies the original files according to the rules defined in the format config file and applies the changes to the source repository.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [DotnetFormat/Results](./DotnetFormat/Results) folder where the output report will be saved.
 - **`-Visualize`**: Translates the generated JSON report into an HTML document and automatically opens it in the default web browser.
+
+### **Results**
+
+First, we will run the formatting script with `check` option and visualization to see which files and lines break defined rules.
+
+```powershell
+.\DotnetFormat\dotnet_format.ps1 check InitialCheck -Visualize
+```
+
+As a result, `JSON` and `HTML` reports are generated in [DotnetFormat/Results/InitialCheck](./DotnetFormat/Results/InitialCheck) folder. Images [5](#img5), [6](#img6), [7](#img7) and [8](#img8) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
+
+<figure id="img5" style="text-align: center;">
+  <img src="./DotnetFormat/Images/report1.png" alt="Initial format check results">
+  <figcaption>Image 5: Initial format check results</figcaption>
+</figure>
+
+<figure id="img6" style="text-align: center;">
+  <img src="./DotnetFormat/Images/report2.png" alt="Initial format check results">
+  <figcaption>Image 6: Initial format check results</figcaption>
+</figure>
+
+<figure id="img7" style="text-align: center;">
+  <img src="./DotnetFormat/Images/report3.png" alt="Initial format check results">
+  <figcaption>Image 7: Initial format check results</figcaption>
+</figure>
+
+<figure id="img8" style="text-align: center;">
+  <img src="./DotnetFormat/Images/report4.png" alt="Initial format check results">
+  <figcaption>Image 8: Initial format check results</figcaption>
+</figure>
+
+Now, we will run the same script in apply mode, which will actually apply formatting rules to the original code.
+
+```powershell
+.\DotnetFormat\dotnet_format.ps1 apply FormatApply -Visualize
+```
+
+We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which represent name rule violations ([Image 9](#img9)). The reason for this is that renaming symbols is a complex refactoring operation and automatic renaming could potentially break the codebase if those symbols are used in reflection, serialization or exposed via public APIs, so the tool refuses to fix them automatically and requires manual fixing. We won't be manually fixing naming violations in this analysis.
+
+<figure id="img9" style="text-align: center;">
+  <img src="./DotnetFormat/Images/apply.png" alt="Format apply warning">
+  <figcaption>Image 9: Format apply warning</figcaption>
+</figure>
+
+Generated report in [DotnetFormat/Results/FormatApply](./DotnetFormat/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
+
+```powershell
+.\DotnetFormat\dotnet_format.ps1 check FinalCheck -Visualize
+```
+
+Generated report in [DotnetFormat/Results/FinalCheck](./DotnetFormat/Results/FinalCheck) shows that only warnings left are name rule violations. As was mentioned before, we will not fix these manually.
+
+**Note**: If you want to recreate these steps (or any others) more than once, you need to discard changes made in the original [Mzinga](./Mzinga) repo.
+
+```bash
+git submodule update --init --recursive --force
+```

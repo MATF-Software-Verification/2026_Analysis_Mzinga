@@ -1,0 +1,974 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotnet Format Report</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background-color: #f4f6f8; color: #333; }
+        h1 { color: #005A9E; text-align: center; margin-bottom: 2rem; }
+        .file-card { background: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); overflow: hidden; }
+        .file-header { background-color: #0078D7; color: white; padding: 12px 20px; font-weight: bold; word-break: break-all; }
+        .file-path { font-size: 0.8em; font-weight: normal; opacity: 0.9; margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px 20px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background-color: #f8f9fa; font-weight: 600; color: #555; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background-color: #f1f5f9; }
+        .diagnostic { color: #d63384; font-family: monospace; background: #fdf5f8; padding: 2px 6px; border-radius: 4px; }
+        .location { color: #055160; font-family: monospace; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Dotnet Format - check Report</h1>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Engine\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L90:C27</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Engine\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L126:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            SigIntMonitor.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Engine\SigIntMonitor.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L63:C27</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Trainer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Trainer\Trainer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L1204:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            TrainerSettings.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Trainer\TrainerSettings.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L98:C21</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: The first word, &apos;GenerateCount&apos;, must begin with a lower case character</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            MoveTests.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Test\MoveTests.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L115:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            MoveTests.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Test\MoveTests.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L106:C56</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            MoveTests.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Test\MoveTests.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L41:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Perft\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L16:C33</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Perft\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L18:C29</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Perft\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L17:C31</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Perft\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L19:C29</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Program.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Perft\Program.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L21:C57</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            GameSettings.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\GameSettings.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L179:C37</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            GameSettings.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\GameSettings.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L180:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            App.axaml.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\App.axaml.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L150:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            CLIEngineWrapper.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\CLIEngineWrapper.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L156:C27</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            CLIEngineWrapper.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\CLIEngineWrapper.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L157:C27</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            EngineConsoleViewModel.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\ViewModels\EngineConsoleViewModel.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L13:C57</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L30:C24</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L33:C24</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L38:C33</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L40:C24</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L43:C24</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L41:C24</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L75:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L76:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L78:C23</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L80:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L81:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L83:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L31:C27</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L746:C26</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L34:C22</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            XamlBoardRenderer.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\XamlBoardRenderer.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L32:C24</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Messages.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\ViewModels\Messages.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L40:C39</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Messages.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\ViewModels\Messages.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L102:C48</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Messages.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\ViewModels\Messages.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L117:C38</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            BugShape.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\Controls\BugShape.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L40:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            ObservableBoardHistory.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga.Viewer\ViewModels\ObservableBoardHistory.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L59:C40</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            EvaluatedMove.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\AI\EvaluatedMove.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L60:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            MetricWeights.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\AI\MetricWeights.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L191:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            TranspositionTable.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\AI\TranspositionTable.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L27:C38</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            GameRecording.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\GameRecording.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L497:C42</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            Position.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\Position.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L35:C41</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            GameAI.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\AI\GameAI.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L27:C37</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            GameAI.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\AI\GameAI.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L946:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            GameAI.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\AI\GameAI.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L945:C30</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            FixedCache.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\FixedCache.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L166:C27</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div>    <div class="file-card">
+        <div class="file-header">
+            FixedCache.cs
+            <div class="file-path">C:\Users\david\Desktop\2026_Analysis_Mzinga\Mzinga\src\Mzinga\Core\FixedCache.cs</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th width="15%">Location</th>
+                    <th width="20%">Diagnostic ID</th>
+                    <th width="65%">Description</th>
+                </tr>
+            </thead>
+            <tbody>                <tr>
+                    <td class="location">L41:C40</td>
+                    <td><span class="diagnostic">IDE1006</span></td>
+                    <td>warning IDE1006: Naming rule violation: Missing prefix: &apos;_&apos;</td>
+                </tr>            </tbody>
+        </table>
+    </div></body>
+</html>

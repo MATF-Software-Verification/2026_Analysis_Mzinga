@@ -1,0 +1,902 @@
+[
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "1d2dd3fe-2d52-4f96-9619-d47f2b83c41a"
+      },
+      "Id": "69811ad7-2f68-455f-9ea5-25741091981d"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 90,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "1d2dd3fe-2d52-4f96-9619-d47f2b83c41a"
+      },
+      "Id": "69811ad7-2f68-455f-9ea5-25741091981d"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 126,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "1d2dd3fe-2d52-4f96-9619-d47f2b83c41a"
+      },
+      "Id": "52240dd8-80dd-4cab-9469-97d68cedd8c1"
+    },
+    "FileName": "SigIntMonitor.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\SigIntMonitor.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 63,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "14b1ddea-8b51-45d1-a458-891702be7abc"
+      },
+      "Id": "ad766ce9-52d6-404b-ab8f-cc1e18d07b33"
+    },
+    "FileName": "Trainer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\Trainer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1204,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "14b1ddea-8b51-45d1-a458-891702be7abc"
+      },
+      "Id": "dc46ae41-900e-432f-806c-6936f761d19b"
+    },
+    "FileName": "TrainerSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Trainer\\TrainerSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 98,
+        "CharNumber": 21,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: The first word, \u0027GenerateCount\u0027, must begin with a lower case character"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "88748c4a-2106-417c-9548-1a8d5e1f9582"
+      },
+      "Id": "42f8fa3b-db41-47a9-991d-7c4b2039f2bb"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 115,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "88748c4a-2106-417c-9548-1a8d5e1f9582"
+      },
+      "Id": "42f8fa3b-db41-47a9-991d-7c4b2039f2bb"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 106,
+        "CharNumber": 56,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "88748c4a-2106-417c-9548-1a8d5e1f9582"
+      },
+      "Id": "42f8fa3b-db41-47a9-991d-7c4b2039f2bb"
+    },
+    "FileName": "MoveTests.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Test\\MoveTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9644466a-85cd-4e9f-bf9a-f0f027e94b88"
+      },
+      "Id": "a160fc78-4b07-4f83-a898-bfd31ad6513b"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 16,
+        "CharNumber": 33,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9644466a-85cd-4e9f-bf9a-f0f027e94b88"
+      },
+      "Id": "a160fc78-4b07-4f83-a898-bfd31ad6513b"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 18,
+        "CharNumber": 29,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9644466a-85cd-4e9f-bf9a-f0f027e94b88"
+      },
+      "Id": "a160fc78-4b07-4f83-a898-bfd31ad6513b"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 17,
+        "CharNumber": 31,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9644466a-85cd-4e9f-bf9a-f0f027e94b88"
+      },
+      "Id": "a160fc78-4b07-4f83-a898-bfd31ad6513b"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 19,
+        "CharNumber": 29,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9644466a-85cd-4e9f-bf9a-f0f027e94b88"
+      },
+      "Id": "a160fc78-4b07-4f83-a898-bfd31ad6513b"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Perft\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 57,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a30e5f3f-df5f-4830-b040-f83a71c59ed5"
+    },
+    "FileName": "GameSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\GameSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 179,
+        "CharNumber": 37,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a30e5f3f-df5f-4830-b040-f83a71c59ed5"
+    },
+    "FileName": "GameSettings.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\GameSettings.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 180,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "c9ed94ff-aa7b-498e-b38e-a720801934c6"
+    },
+    "FileName": "App.axaml.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\App.axaml.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 150,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "433262de-3d04-400a-bf58-277bcbb2daaa"
+    },
+    "FileName": "CLIEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\CLIEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 156,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "433262de-3d04-400a-bf58-277bcbb2daaa"
+    },
+    "FileName": "CLIEngineWrapper.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\CLIEngineWrapper.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 157,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "e2c294c2-593f-4a45-8658-afc6f3e84df5"
+    },
+    "FileName": "EngineConsoleViewModel.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\EngineConsoleViewModel.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 13,
+        "CharNumber": 57,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 30,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 33,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 38,
+        "CharNumber": 33,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 40,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 43,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 75,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 76,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 78,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 80,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 81,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 83,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 31,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 746,
+        "CharNumber": 26,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 34,
+        "CharNumber": 22,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "a0f586ac-a5eb-4213-a7d8-376737c10fb3"
+    },
+    "FileName": "XamlBoardRenderer.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\XamlBoardRenderer.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 24,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "d9752e52-0f89-431b-96a9-f1f6a4500a21"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 40,
+        "CharNumber": 39,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "d9752e52-0f89-431b-96a9-f1f6a4500a21"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 102,
+        "CharNumber": 48,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "d9752e52-0f89-431b-96a9-f1f6a4500a21"
+    },
+    "FileName": "Messages.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\Messages.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 117,
+        "CharNumber": 38,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "211189c7-c2a5-4373-87a6-2ee7ada700c5"
+    },
+    "FileName": "BugShape.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\Controls\\BugShape.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 40,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "cd2ddd3d-5d18-42d4-adfb-f0be36d51f7a"
+      },
+      "Id": "cf37d088-37ce-4ba1-b6f5-5ac39283b2f1"
+    },
+    "FileName": "ObservableBoardHistory.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Viewer\\ViewModels\\ObservableBoardHistory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 59,
+        "CharNumber": 40,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "30988a6c-2579-4dc6-9ef8-b5a21407a75c"
+    },
+    "FileName": "EvaluatedMove.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\EvaluatedMove.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 60,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "b9294025-421d-4843-86e1-9d37317501fa"
+    },
+    "FileName": "MetricWeights.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\MetricWeights.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 191,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "0662a135-ea81-41b6-952b-bc539fe54cc9"
+    },
+    "FileName": "TranspositionTable.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\TranspositionTable.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 27,
+        "CharNumber": 38,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "f3714a5f-ef4d-4f10-b20d-b02efffeeff6"
+    },
+    "FileName": "GameRecording.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\GameRecording.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 497,
+        "CharNumber": 42,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "194528b4-6924-46ff-8d64-75c10a0e4c42"
+    },
+    "FileName": "Position.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Position.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 35,
+        "CharNumber": 41,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "dae5ae2a-64ba-494a-9145-eb2e8e7b4862"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 27,
+        "CharNumber": 37,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "dae5ae2a-64ba-494a-9145-eb2e8e7b4862"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 946,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "dae5ae2a-64ba-494a-9145-eb2e8e7b4862"
+    },
+    "FileName": "GameAI.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\GameAI.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 945,
+        "CharNumber": 30,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "5b255f90-d0cf-4daa-9999-8a8d3be9b704"
+    },
+    "FileName": "FixedCache.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FixedCache.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 166,
+        "CharNumber": 27,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "10b6113f-93b0-4a8d-8900-cd0ac3907a73"
+      },
+      "Id": "5b255f90-d0cf-4daa-9999-8a8d3be9b704"
+    },
+    "FileName": "FixedCache.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\FixedCache.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 41,
+        "CharNumber": 40,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: Naming rule violation: Missing prefix: \u0027_\u0027"
+      }
+    ]
+  }
+]
