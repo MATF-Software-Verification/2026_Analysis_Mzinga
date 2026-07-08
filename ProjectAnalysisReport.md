@@ -123,11 +123,21 @@ Looking at the detailed results for the classes where tests were added, we achie
 
 ## **Code formatting**
 
-To format the code and apply style checks, the **`dotnet format`** tool from the .NET SDK is used. To streamline formatting and style verification a PowerShell script `dotnet_format.ps1` was created. This script applies custom styling rules from the local `.editorconfig` format file, runs the format or check process and generates detailed reports. The custom configuration (`.editorconfig`) and the execution script are located in the `DotnetFormat` directory.
+The original Mzinga codebase contains an `.editorconfig` file in its `src/` directory. This existing configuration only disables a few specific C# features, such as implicit object creation, range operators, and switch expressions, but it completely lacks standard formatting rules to ensure code consistency.
+
+To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration (`.editorconfig`) is located in the `DotnetFormat` directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
+- **Encoding and spacing:** Forces UTF-8 representation, trailing whitespace removal and mandatory newline at the end of file. This is applied to all files, while following rules apply to `.cs` files only.
+- **Indentation:** Forces standard 4-space indentation across all code components.
+- **Newline structure:** Forces placing open braces on new lines for all control flow expressions (`if`, `else`, `catch`, `finally`, etc.). It also forces explicit new lines between query expression clauses.
+- **Layout rules:** Forces padding around binary operators, no spaces around declaration statements and no spaces between method parameter list parentheses or general parentheses. It also forces sorting of system directives first and separate import directive groups. It warns if braces are missing for single-line statements and warns about implicit access modifiers (requiring `public`, `private`, etc.).
+- **Naming conventions:** Warns if interfaces do not start with `I` and if private/internal fields do not start with an underscore.
+- **Modern syntax conventions:** Suggests modern `throw` expressions, null-coalescing (`??`) and null-conditional (`?.`) operators. It also suggests preferring `is null` checks over reference equality methods.
+
+To streamline formatting and style verification a PowerShell script (`dotnet_format.ps1`) was created. This script applies custom styling rules from the local `.editorconfig` format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of formatting execution.
   - `check`: Runs in a verify-only mode. It reports errors and generates a log without modifying original source code.
-  - `apply`: Directly formats and modifies the `.cs` files according to the rules defined in the `.editorconfig` file and applies the changes to the source repository.
+  - `apply`: Directly formats and modifies the original files according to the rules defined in the `.editorconfig` file and applies the changes to the source repository.
 - **`TargetDir`** (required): Specifies the name of the subdirectory inside the `DotnetFormat/Results` folder where the output report will be saved.
 - **`-Visualize`**: Translates the generated JSON report into an HTML document and automatically opens it in the default web browser.
