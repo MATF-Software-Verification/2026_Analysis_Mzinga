@@ -121,6 +121,20 @@ Looking at the detailed results for the classes where tests were added, we achie
   <figcaption>Image 4: Final code coverage detailed results</figcaption>
 </figure>
 
+## **Mutation testing**
+
+**Mutation testing** is a technique used to evaluate the quality of existing unit tests. It works by injecting small, artificial defects (**mutations**) into the source code, such as changing `>` to `>=`, modifying logic or altering return values. A reliable test suite should fail (**"kill" the mutant**) when these alterations are introduced. If the tests still pass (**the mutant "survives"**), it indicates a weakness or gap in the test suite that needs addressing.
+
+### **Stryker.NET**
+
+To perform mutation testing on the Mzinga project, we will use **Stryker.NET** (`dotnet-stryker`). Stryker is a popular, open-source mutation testing framework specifically designed for .NET and C# applications. It automates the generation of mutants, runs the tests against them and produces reports highlighting which mutants survived and where potential gaps in the test suite exist.
+
+To simplify the execution of Stryker, a PowerShell script ([run_mutation_tests.ps1](./Tests/MutationTesting/run_mutation_tests.ps1)) was created. This script handles Stryker installation, runs the tool on the specified test target and manages reporting.
+
+The script accepts the following arguments:
+- **`-Rerun`**: Forces Stryker to execute again and ignores previously generated results for the testing target.
+- **`-Visualize`**: Automatically opens the generated HTML report in the default browser once execution completes.
+
 ## **Code formatting**
 
 The original Mzinga codebase contains an [.editorconfig](./Mzinga/src/.editorconfig) file in its `src/` directory. This existing configuration only disables a few specific C# features, such as implicit object creation, range operators and switch expressions, but it completely lacks standard formatting rules to ensure code consistency.
