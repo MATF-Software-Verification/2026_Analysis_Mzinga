@@ -212,3 +212,16 @@ Generated report in [DotnetFormat/Results/FinalCheck](./DotnetFormat/Results/Fin
 ```bash
 git submodule update --init --recursive --force
 ```
+
+## **Static Code Analysis**
+
+Static code analysis involves examining source code without executing it, typically to find potential vulnerabilities or deviations from coding standards. For .NET projects, **Roslyn Analyzers** provide a powerful mechanism for this. **Roslynator** is an open-source collection of over 500 analyzers and refactorings for C# that we will integrate into the Mzinga project.
+
+A PowerShell script ([run_roslynator.ps1](./Roslynator/run_roslynator.ps1)) was created in the [Roslynator](./Roslynator) directory. This script wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
+
+The script accepts the following arguments:
+- **`Mode`** (required): Determines the type of execution.
+  - `check`: Discovers and reports analyzer warnings without making any changes.
+  - `apply`: Automatically applies fixes for any known warnings and updates the source code.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Roslynator/Results](./Roslynator/Results) folder where the output report will be saved.
+- **`-Visualize`**: Parses the generated JSON output into a clean HTML table and automatically opens it in the browser.
