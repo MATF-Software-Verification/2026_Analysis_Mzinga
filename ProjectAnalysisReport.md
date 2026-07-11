@@ -154,7 +154,7 @@ The script accepts the following arguments:
   - `check`: Runs in a verify-only mode. It reports errors and generates a log without modifying original source code.
   - `apply`: Directly formats and modifies the original files according to the rules defined in the format config file and applies the changes to the source repository.
 - **`TargetDir`** (required): Specifies the name of the subdirectory inside the [DotnetFormat/Results](./DotnetFormat/Results) folder where the output report will be saved.
-- **`-Visualize`**: Translates the generated JSON report into an HTML document and automatically opens it in the default web browser.
+- **`-Visualize`**: Parses the generated JSON report into an HTML document and automatically opens it in the default web browser.
 
 ### **Results**
 
@@ -215,13 +215,86 @@ git submodule update --init --recursive --force
 
 ## **Static Code Analysis**
 
-Static code analysis involves examining source code without executing it, typically to find potential vulnerabilities or deviations from coding standards. For .NET projects, **Roslyn Analyzers** provide a powerful mechanism for this. **Roslynator** is an open-source collection of over 500 analyzers and refactorings for C# that we will integrate into the Mzinga project.
+Static code analysis involves examining source code without executing it, typically to find potential vulnerabilities or deviations from coding standards. For .NET projects, **Roslyn Analyzers** provide a powerful mechanism for this. **[Roslynator](https://github.com/dotnet/roslynator)** is an open-source collection of over 500 analyzers and refactorings for C# that we will integrate into the Mzinga project.
 
-A PowerShell script ([run_roslynator.ps1](./Roslynator/run_roslynator.ps1)) was created in the [Roslynator](./Roslynator) directory. This script wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
+A PowerShell script ([run_roslynator.ps1](./Roslynator/run_roslynator.ps1)) was created in the [Roslynator](./Roslynator) directory. This script first injects the required Roslynator NuGet packages into the main `.csproj` files, and then wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of execution.
   - `check`: Discovers and reports analyzer warnings without making any changes.
   - `apply`: Automatically applies fixes for any known warnings and updates the source code.
 - **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Roslynator/Results](./Roslynator/Results) folder where the output report will be saved.
-- **`-Visualize`**: Parses the generated JSON output into a clean HTML table and automatically opens it in the browser.
+- **`-Visualize`**: Parses the generated JSON output into an HTML report and automatically opens it in the default web browser.
+
+### **Initial check**
+
+Running the script in `check` mode allows us to see what issues exist before any changes are applied.
+
+```powershell
+.\Roslynator\run_roslynator.ps1 check InitialCheck -Visualize
+```
+
+The output revealed a surprisingly small number of codebase issues. Finding only a few warnings, none of which represent critical architectural flaws or security vulnerabilities, indicates that the original Mzinga project is already in excellent condition. The identified issues were:
+- **Empty catch blocks** (RCS1075): Exceptions were caught but ignored completely, which can hide application failures.
+- **Static classes** (RCS1102): Classes containing only static members but not declared as `static`.
+- **String comparisons** (RCS1155): String comparisons lacking explicit `StringComparison` arguments, potentially causing culture-specific bugs.
+- **Exception constructors** (RCS1194): Custom exception implementations missing standard `.NET` exception constructors.
+
+[Image 10](#img10) shows the generated HTML report. 
+
+<figure id="img10" style="text-align: center;">
+  <img src="./Roslynator/Images/report1.png" alt="Initial static analysis report">
+  <figcaption>Image 10: Initial static analysis report</figcaption>
+</figure>
+
+### **Applying changes**
+
+After initial check, we will run the tool in `apply` mode to automatically refactor the code and resolve the warnings.
+
+```powershell
+.\Roslynator\run_roslynator.ps1 apply FormatApply -Visualize
+```
+
+As we can see on the [Image 11](#img11), static class and string comparison warnings were resolved, but analyzer could not automatically fix empty catch blocks and exception constructor warnings.
+
+<figure id="img11" style="text-align: center;">
+  <img src="./Roslynator/Images/report2.png" alt="Remaining static analysis warnings">
+  <figcaption>Image 11: Remaining static analysis warnings</figcaption>
+</figure>
+
+Resolving `RCS1075` (Avoid empty catch clause) requires human intervention to determine the appropriate error-handling strategy, so no automatic fix exists. Depending on the intent, potential resolutions include tracking the error using logging mechanisms, rethrowing the exception or replacing the generic `System.Exception` with a specific error type.
+
+```csharp
+// Before
+try {
+    // ...
+} catch (Exception ex) {
+}
+
+// After
+try {
+    // ...
+} catch (Exception ex) {
+    Log.Warning("message")
+}
+```
+
+Resolving `RCS1194` (Implement exception constructors) cannot be done automatically because generating those constructors affects the public API of a class. Standard [.NET guidelines](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions) dictate that custom exceptions should provide at least three default constructors - a default constructor, one that takes a string message and one that takes both a string message and an inner exception.
+
+```csharp
+// Before
+public class CommandException : Exception
+{
+    public CommandException(string message) : base(message) { }
+}
+
+// After
+public class CommandException : Exception
+{
+    public CommandException() { }
+    public CommandException(string message) : base(message) { }
+    public CommandException(string message, Exception innerException) : base(message, innerException) { }
+}
+```
+
+Once the appropriate manual fixes for the empty catch blocks and exception constructors are chosen and applied to the source files, executing the `check` mode of the script once more will confirm that all static analysis warnings have been successfully resolved.

@@ -1,0 +1,290 @@
+[
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "387536f7-df0d-4783-856f-6d84306be445"
+      },
+      "Id": "88fc9476-a3b0-4cdf-98b3-fcd1c23fca75"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 120,
+        "CharNumber": 13,
+        "DiagnosticId": "RCS1075",
+        "FormatDescription": "warning RCS1075: Avoid empty catch clause that catches System.Exception"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "387536f7-df0d-4783-856f-6d84306be445"
+      },
+      "Id": "88fc9476-a3b0-4cdf-98b3-fcd1c23fca75"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga.Engine\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 10,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1102",
+        "FormatDescription": "warning RCS1102: Make class static"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "ab39f21b-5271-4eb7-b6a3-d0c40819a409"
+    },
+    "FileName": "MetricWeights.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\AI\\MetricWeights.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 159,
+        "CharNumber": 17,
+        "DiagnosticId": "RCS1075",
+        "FormatDescription": "warning RCS1075: Avoid empty catch clause that catches System.Exception"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "40a05749-903a-4c86-967b-f00865fb1f99"
+    },
+    "FileName": "VersionUtils.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\VersionUtils.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 31,
+        "CharNumber": 13,
+        "DiagnosticId": "RCS1075",
+        "FormatDescription": "warning RCS1075: Avoid empty catch clause that catches System.Exception"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "1d833e3f-b381-48a1-b5e3-39b047605c44"
+    },
+    "FileName": "Board.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Board.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 134,
+        "CharNumber": 13,
+        "DiagnosticId": "RCS1075",
+        "FormatDescription": "warning RCS1075: Avoid empty catch clause that catches System.Exception"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "1d833e3f-b381-48a1-b5e3-39b047605c44"
+    },
+    "FileName": "Board.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Board.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 402,
+        "CharNumber": 13,
+        "DiagnosticId": "RCS1075",
+        "FormatDescription": "warning RCS1075: Avoid empty catch clause that catches System.Exception"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "1d833e3f-b381-48a1-b5e3-39b047605c44"
+    },
+    "FileName": "Board.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Core\\Board.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 1477,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1194",
+        "FormatDescription": "warning RCS1194: Implement exception constructors"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 843,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1194",
+        "FormatDescription": "warning RCS1194: Implement exception constructors"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 864,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1194",
+        "FormatDescription": "warning RCS1194: Implement exception constructors"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 859,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1194",
+        "FormatDescription": "warning RCS1194: Implement exception constructors"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 849,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1194",
+        "FormatDescription": "warning RCS1194: Implement exception constructors"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 854,
+        "CharNumber": 18,
+        "DiagnosticId": "RCS1194",
+        "FormatDescription": "warning RCS1194: Implement exception constructors"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 174,
+        "CharNumber": 53,
+        "DiagnosticId": "RCS1155",
+        "FormatDescription": "warning RCS1155: Use StringComparison when comparing strings"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 178,
+        "CharNumber": 53,
+        "DiagnosticId": "RCS1155",
+        "FormatDescription": "warning RCS1155: Use StringComparison when comparing strings"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 202,
+        "CharNumber": 53,
+        "DiagnosticId": "RCS1155",
+        "FormatDescription": "warning RCS1155: Use StringComparison when comparing strings"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "b59e746b-5d3f-4a0e-ba09-d4dbd30d26d8"
+      },
+      "Id": "76b5b9f0-44ae-4e63-b323-c1dcb316b7dd"
+    },
+    "FileName": "Engine.cs",
+    "FilePath": "C:\\Users\\david\\Desktop\\2026_Analysis_Mzinga\\Mzinga\\src\\Mzinga\\Engine\\Engine.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 206,
+        "CharNumber": 53,
+        "DiagnosticId": "RCS1155",
+        "FormatDescription": "warning RCS1155: Use StringComparison when comparing strings"
+      }
+    ]
+  }
+]
