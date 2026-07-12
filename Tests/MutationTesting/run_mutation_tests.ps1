@@ -68,6 +68,15 @@ try
             $strykerArgs += "--test-project"
             $strykerArgs += $NewTestProject
 
+            $strykerArgs += "--mutate"
+            $strykerArgs += "**/Engine.cs"
+            $strykerArgs += "--mutate"
+            $strykerArgs += "**/EngineConfig.cs"
+
+            $MaxConcurrency = [Math]::Max(1, [System.Environment]::ProcessorCount - 1)
+            $strykerArgs += "--concurrency"
+            $strykerArgs += $MaxConcurrency
+
             if ($Visualize)
             {
                 $strykerArgs += "-o"

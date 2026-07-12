@@ -112,7 +112,7 @@ Looking at the detailed results for the classes where tests were added, we achie
 - **`Mzinga.Engine.EngineConfig`** increased from 39.5% to 83.5% line coverage.
 - **`CommandException`**, **`NoBoardException`**, **`PerfInvalidDepthException`** and **`UndoInvalidNumberOfMovesException`** all increased from 0% to 100% line coverage.
 - **`Mzinga.Core.GameMetadata`**: increased from 50% to 66.1% line coverage.
-- **`Mzinga.AppInfo`** increased from 0% to 100% line coveragey.
+- **`Mzinga.AppInfo`** increased from 0% to 100% line coverage.
 - **`Mzinga.VersionUtils`** increased from 0% to 52.9% line coverage.
 - **`Mzinga.Core.MoveSet`** increased from 0% to 45% line coverage.
 
@@ -129,11 +129,79 @@ Looking at the detailed results for the classes where tests were added, we achie
 
 To perform mutation testing on the Mzinga project, we will use **Stryker.NET** (`dotnet-stryker`). Stryker is a popular, open-source mutation testing framework specifically designed for .NET and C# applications. It automates the generation of mutants, runs the tests against them and produces reports highlighting which mutants survived and where potential gaps in the test suite exist.
 
-To simplify the execution of Stryker, a PowerShell script ([run_mutation_tests.ps1](./Tests/MutationTesting/run_mutation_tests.ps1)) was created. This script handles Stryker installation, runs the tool on the specified test target and manages reporting.
+To simplify the execution of Stryker, a PowerShell script ([run_mutation_tests.ps1](./Tests/MutationTesting/run_mutation_tests.ps1)) was created. This script handles Stryker installation, runs the tool and manages reporting. Because running mutation testing over the entire project can take extremely long (sometimes days), the execution script was internally configured to focus exclusively on the `Mzinga.Engine` namespace. Specifically, it targets the `Engine` and `EngineConfig` classes, as these are one of the classes where we previously introduced new unit tests.
 
 The script accepts the following arguments:
 - **`-Rerun`**: Forces Stryker to execute again and ignores previously generated results for the testing target.
 - **`-Visualize`**: Automatically opens the generated HTML report in the default browser once execution completes.
+
+### **Results**
+
+We will run the execution script with visualizing the results:
+
+```powershell
+.\Tests\MutationTesting\run_mutation_tests.ps1 -Visualize
+```
+
+Before we review the results, here's a brief explanation of the terms found in the report:
+- **Killed**: Mutants that caused a test to fail.
+- **Survived**: Mutants that did not cause any test to fail, indicating gaps in test assertions.
+- **Timeout**: Mutants that caused tests to run infinitely or exceed time limits, usually due to infinite loops.
+- **No coverage**: Mutants in code that is not executed by any unit test.
+- **Ignored**: Mutants explicitly skipped by configuration.
+- **Runtime errors**: Mutants that caused application crashes.
+- **Compile errors**: Mutants that broke the compilation process.
+- **Detected**: The sum of killed and timeout mutants.
+- **Undetected**: The sum of survived and no coverage mutants.
+- **Total**: The total number of valid mutants.
+
+The mutation report (Images [5](#img5) and [6](#img6)) show the overall mutation score for the `Engine` classes is **26.24%**. This is a poor result, indicating that the unit tests are not effectively catching most of the injected defects.
+
+Looking at the detailed breakdown:
+- **`EngineConfig.cs`** achieved a mutation score of **51.82%** (19 out of 191 mutants killed).
+- **`Engine.cs`** achieved a mutation score of **18.39%** (3 out of 558 mutants killed).
+
+<figure id="img5" style="text-align: center;">
+  <img src="./Tests/MutationTesting/Images/report1.png" alt="Mutation testing results (Mutants)">
+  <figcaption>Image 5: Mutation testing results (Mutants)</figcaption>
+</figure> 
+
+<figure id="img6" style="text-align: center;">
+  <img src="./Tests/MutationTesting/Images/report2.png" alt="Mutation testing results (Tests">
+  <figcaption>Image 6: Mutation testing results (Tests)</figcaption>
+</figure>
+
+To further improve these tests, new test boundaries should be added to assert specific state behaviors based on those surviving mutants. If we go into a specific file we can check the "Survived" option ([Image 7](#img7)), which will mark the lines that were mutated and show what change was made. This tells us exactly which additional assertions we need to include.
+
+<figure id="img7" style="text-align: center;">
+  <img src="./Tests/MutationTesting/Images/report3.png" alt="Setting up mutant search">
+  <figcaption>Image 7: Setting up mutant search</figcaption>
+</figure>
+
+We can see that the common mutants introduced include switching function calls with an empty command, negating expressions, changing string messages etc. (Images [8](#img8), [9](#img9) and [10](#img10)).
+
+<figure id="img8" style="text-align: center;">
+  <img src="./Tests/MutationTesting/Images/report4.png" alt="Survived mutant example 1">
+  <figcaption>Image 8: Survived mutant example 1</figcaption>
+</figure>
+
+<figure id="img9" style="text-align: center;">
+  <img src="./Tests/MutationTesting/Images/report5.png" alt="Survived mutant example 2">
+  <figcaption>Image 9: Survived mutant example 2</figcaption>
+</figure>
+
+<figure id="img10" style="text-align: center;">
+  <img src="./Tests/MutationTesting/Images/report6.png" alt="Survived mutant example 3">
+  <figcaption>Image 10: Survived mutant example 3</figcaption>
+</figure>
+
+Based on the mutants generated and tests covering them, we can think about possible solutions for making the tests better.
+
+1. **Empty string mutants in Exception constructors**: In the test `Engine_ParseCommand_PerftInvalidDepthException`, the exception message string (`"Unable to calculate perft({0})."`) was changed to an empty string, but the mutant survived. This means the test only verifies if the `PerftInvalidDepthException` is thrown, but does not verify its content. We should add an assertion to explicitly check that the `Exception.Message` property matches the expected error text.
+2. **Logical condition inversions**: In `Engine_ParseCommand_PerftWithArgs` and `Engine_ParseCommand_PerftInvalidDepthException`, an `if (_board is null)` condition was mutated to `if (_board is not null)`. The mutant survived, meaning the tests execute the logic but do not strictly assert the engine's behavior differences between having an active board and not having one. We should assert the specific console stream output messages for both scenarios to catch inverted logical flows.
+3. **Removed function calls**: Function calls like `StopPonder()` inside `BestMove` or `Play` were replaced with empty commands (`;`), yet the tests still passed. This indicates the current tests only verify the main routine outcome but ignore secondary state. We should add assertions to check the specific side-effects of those operations, such as verifying that the engine state transitions correctly and any background pondering tasks are tracked and actually terminated.
+4. **State flag inversions**: In `Engine_ParseCommand_Exit`, the boolean assignment `ExitRequested = true` was mutated to `ExitRequested = false`. The test verifies that the command parses without crashing, but forgets to assert that the `ExitRequested` boolean flag flips to `true` on the instantiated engine object. We should assert the `ExitRequested` property state after processing an "exit" command.
+5. **Data string deletions**: In `Engine_ParseCommand_OptionsGet` targeting `GetMaxBranchingFactorValue`, the string literal `type = "int";` was mutated to an empty string `type = "";`. This survival means the test asks for the options list but does not explicitly validate the metadata content format of those options. We need to parse the generated output string and strictly assert that the property types (like `"int"`, `"string"`, `"enum"`) are present in the output.
 
 ## **Code formatting**
 
@@ -164,26 +232,26 @@ First, we will run the formatting script with `check` option and visualization t
 .\DotnetFormat\dotnet_format.ps1 check InitialCheck -Visualize
 ```
 
-As a result, `JSON` and `HTML` reports are generated in [DotnetFormat/Results/InitialCheck](./DotnetFormat/Results/InitialCheck) folder. Images [5](#img5), [6](#img6), [7](#img7) and [8](#img8) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
+As a result, `JSON` and `HTML` reports are generated in [DotnetFormat/Results/InitialCheck](./DotnetFormat/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
 
-<figure id="img5" style="text-align: center;">
+<figure id="img11" style="text-align: center;">
   <img src="./DotnetFormat/Images/report1.png" alt="Initial format check results">
-  <figcaption>Image 5: Initial format check results</figcaption>
+  <figcaption>Image 11: Initial format check results</figcaption>
 </figure>
 
-<figure id="img6" style="text-align: center;">
+<figure id="img12" style="text-align: center;">
   <img src="./DotnetFormat/Images/report2.png" alt="Initial format check results">
-  <figcaption>Image 6: Initial format check results</figcaption>
+  <figcaption>Image 12: Initial format check results</figcaption>
 </figure>
 
-<figure id="img7" style="text-align: center;">
+<figure id="img13" style="text-align: center;">
   <img src="./DotnetFormat/Images/report3.png" alt="Initial format check results">
-  <figcaption>Image 7: Initial format check results</figcaption>
+  <figcaption>Image 13: Initial format check results</figcaption>
 </figure>
 
-<figure id="img8" style="text-align: center;">
+<figure id="img14" style="text-align: center;">
   <img src="./DotnetFormat/Images/report4.png" alt="Initial format check results">
-  <figcaption>Image 8: Initial format check results</figcaption>
+  <figcaption>Image 14: Initial format check results</figcaption>
 </figure>
 
 Now, we will run the same script in apply mode, which will actually apply formatting rules to the original code.
@@ -192,11 +260,11 @@ Now, we will run the same script in apply mode, which will actually apply format
 .\DotnetFormat\dotnet_format.ps1 apply FormatApply -Visualize
 ```
 
-We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which represent name rule violations ([Image 9](#img9)). The reason for this is that renaming symbols is a complex refactoring operation and automatic renaming could potentially break the codebase if those symbols are used in reflection, serialization or exposed via public APIs, so the tool refuses to fix them automatically and requires manual fixing. We won't be manually fixing naming violations in this analysis.
+We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which represent name rule violations ([Image 15](#img15)). The reason for this is that renaming symbols is a complex refactoring operation and automatic renaming could potentially break the codebase if those symbols are used in reflection, serialization or exposed via public APIs, so the tool refuses to fix them automatically and requires manual fixing. We won't be manually fixing naming violations in this analysis.
 
-<figure id="img9" style="text-align: center;">
+<figure id="img15" style="text-align: center;">
   <img src="./DotnetFormat/Images/apply.png" alt="Format apply warning">
-  <figcaption>Image 9: Format apply warning</figcaption>
+  <figcaption>Image 15: Format apply warning</figcaption>
 </figure>
 
 Generated report in [DotnetFormat/Results/FormatApply](./DotnetFormat/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
@@ -240,11 +308,11 @@ The output revealed a surprisingly small number of codebase issues. Finding only
 - **String comparisons** (RCS1155): String comparisons lacking explicit `StringComparison` arguments, potentially causing culture-specific bugs.
 - **Exception constructors** (RCS1194): Custom exception implementations missing standard `.NET` exception constructors.
 
-[Image 10](#img10) shows the generated HTML report. 
+[Image 16](#img16) shows the generated HTML report. 
 
-<figure id="img10" style="text-align: center;">
+<figure id="img16" style="text-align: center;">
   <img src="./Roslynator/Images/report1.png" alt="Initial static analysis report">
-  <figcaption>Image 10: Initial static analysis report</figcaption>
+  <figcaption>Image 16: Initial static analysis report</figcaption>
 </figure>
 
 ### **Applying changes**
@@ -255,11 +323,11 @@ After initial check, we will run the tool in `apply` mode to automatically refac
 .\Roslynator\run_roslynator.ps1 apply FormatApply -Visualize
 ```
 
-As we can see on the [Image 11](#img11), static class and string comparison warnings were resolved, but analyzer could not automatically fix empty catch blocks and exception constructor warnings.
+As we can see on the [Image 17](#img17), static class and string comparison warnings were resolved, but analyzer could not automatically fix empty catch blocks and exception constructor warnings.
 
-<figure id="img11" style="text-align: center;">
+<figure id="img17" style="text-align: center;">
   <img src="./Roslynator/Images/report2.png" alt="Remaining static analysis warnings">
-  <figcaption>Image 11: Remaining static analysis warnings</figcaption>
+  <figcaption>Image 17: Remaining static analysis warnings</figcaption>
 </figure>
 
 Resolving `RCS1075` (Avoid empty catch clause) requires human intervention to determine the appropriate error-handling strategy, so no automatic fix exists. Depending on the intent, potential resolutions include tracking the error using logging mechanisms, rethrowing the exception or replacing the generic `System.Exception` with a specific error type.
