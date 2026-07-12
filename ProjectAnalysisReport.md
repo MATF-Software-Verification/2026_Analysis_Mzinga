@@ -366,3 +366,66 @@ public class CommandException : Exception
 ```
 
 Once the appropriate manual fixes for the empty catch blocks and exception constructors are chosen and applied to the source files, executing the `check` mode of the script once more will confirm that all static analysis warnings have been successfully resolved.
+
+## **Performance profiling**
+
+**Performance profiling** is a technique used to measure the computational resources an application consumes at runtime. By recording CPU time and the execution frequency of specific functions, we can identify computational bottlenecks and optimize the code. In applications heavily reliant on heuristic search trees, like Mzinga's artificial intelligence search, profiling is essential to ensure maximum search depth within given time limits. For this analysis, we will use the **`dotnet-trace`** CLI tool, which is a cross-platform performance profiling tool from the .NET SDK.
+
+### **Profiling setup and execution**
+
+To gather relevant engine data, we need to simulate a realistic processing load. Since the bottleneck happens during calculation of deep heuristic search trees, our goal is to mimic the engine's behavior under heavy load. 
+
+A PowerShell script ([run_profiler.ps1](./Performance%20Profiling/run_profiler.ps1)) was created in the [Performance Profiling](./Performance%20Profiling) directory. This script automates launching the engine and collecting diagnostic metrics using the `dotnet-trace` tool. 
+
+The script executes the following steps:
+1. Installs `dotnet-trace` globally, if it doesn't already exist.
+2. Builds the `Mzinga.Engine` in **Release** configuration.
+3. Launches the Engine process and redirects Standard input and output to issue commands.
+4. Starts a new game and instructs the engine to play 4 turns without profiling, allowing maximum of 60 seconds of search time per turn. This populates the board and reaches a complex state.
+5. In the background, it attaches the `dotnet-trace` profiler to the active engine process ID.
+6. Simulates another 4 turns, extracting profiled data with a maximum processing time of 60 seconds per turn.
+7. Stops the engine which automatically signals the profiler to finish the diagnostic collection and save the `.nettrace` file. 
+
+The script accepts the following arguments:
+- **`-Visualize`**: Automatically opens the generated report inside Visual Studio once execution completes.
+- **`-Rerun`**: Deletes the previous report and runs the entire automated sequence over. By default, the script skips execution if the profile result already exists.
+
+We will run the execution script with visualizing the results:
+
+```powershell
+.\Performance Profiling\run_profiler.ps1 -Visualize
+```
+
+### **Results**
+
+The generated report ([Report.nettrace](./Performance%20Profiling/Results/Report.nettrace)) provides a report of CPU time spent per function. Looking at the **Top Functions** section ([Image 18](#img18)), we can clearly see the primary performance bottlenecks located within the `Mzinga.Core.Board` class:
+
+1. **`GetValidSlides`**: This is by far the most expensive method. It calculates valid sliding moves for board pieces. Sliding in Hive requires continuous checks of adjacent spaces to ensure the piece physically fits during the slide.
+2. **`IsPinned` / `IsOneHive`**: These functions check the "One Hive Rule" - ensuring that moving a piece does not split the hive in two. It consumes extremely high CPU resources because it must simulate board connectivity dynamically on every piece placement.
+3. **`CalculateValidPlacements`**: Calculating valid placements for playing new pieces requires evaluating board adjacencies to make sure no opposing piece touches the newly placed colored piece.
+
+<figure id="img18" style="text-align: center;">
+  <img src="./Performance Profiling/Images/report1.png" alt="Profiling report">
+  <figcaption>Image 18: Profiling report</figcaption>
+</figure>
+
+To confirm how we can optimize this, we need to locate the root execution source triggering these operations. To open the call tree view, click `Open Details...` and select `Call Tree` in the `Current View` section. Keep on clicking the `Expand Hot Path` option until the primary bottlenecks are reached. This will expand the execution trace from thread initialization down to the deeply nested engine methods ([Image 20](#img20)).
+
+<figure id="img20" style="text-align: center;">
+  <img src="./Performance Profiling/Images/report2.png" alt="Call tree">
+  <figcaption>Image 20: Call tree</figcaption>
+</figure>
+
+Bottleneck happens because of the way `GameAI` generates its search tree. It evaluates millions of game boards by trying different move combinations (`PrincipalVariationSearchAsync`) and when it reaches leaf nodes it initiates deeper tactical checks (`QuiescenceSearchAsync`). To evaluate who is winning in a specific board state, the engine calculates a heuristic score using `BoardMetrics`.
+
+However, the current architecture forces `GetBoardMetrics()` to call `GetValidMoves()` for every piece on the board on every single node. Because the tree traverses millions of nodes per second, evaluating `GetValidMoves` repeatedly triggers recalculations of massive logic queries like `GetValidSlides` and `IsPinned`.
+
+Since the board state changes predictably with every single move (only one bug shifts location per turn), dynamically recalculating the entire move list from scratch every time it seeks heuristics is inefficient. 
+
+### **Possible optimization**
+
+To resolve this inefficiency, the `Board` class should to implement incremental move generation. Instead of recalculating all valid moves from scratch on every evaluated turn, the engine should store and incrementally update a `ValidMoves` cache. 
+
+Upon playing or undoing a piece, it should identify only the specific bugs directly affected by the change (the moved piece itself, its direct neighbors and pieces that were "pinned" but are now free). It would then recalculate valid moves exclusively for those pieces, leaving the rest of the board's precalculated moves completely intact. 
+
+This approach would drastically decrease the required CPU cycling, allowing the AI to search significantly deeper in the same time limit. Introducing incremental move generation is a complex architectural change that spans across the core game logic and is not easy to implement. We won't be implementing it in this analysis and will leave it as a suggestion for the author.
