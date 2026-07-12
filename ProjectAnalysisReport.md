@@ -4,7 +4,7 @@
 
 The **Mzinga** project utilizes the **MSTest** framework for its existing unit tests. Alongside the test framework, **Coverlet** is integrated as a cross-platform code coverage library for .NET. 
 
-To streamline the execution and reporting of unit tests, a PowerShell script [run_tests.ps1](./Tests/run_tests.ps1) was created in the [Tests](./Tests) directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
+To streamline the execution and reporting of unit tests, a PowerShell script [run_unit_tests.ps1](./Unit Tests/run_unit_tests.ps1) was created in the [Unit Tests](./Unit Tests) directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
 
 The script accepts the following arguments:
 - **`Target`**: Indicates which context of tests to evaluate. Results and reports are separately cached under `Results/{Target}` and `CoverageReport/{Target}` directories.
@@ -20,13 +20,13 @@ The script accepts the following arguments:
 Before introducing additional unit tests to the codebase, it is crucial to establish the current test coverage baseline. We will run only the original tests and generate the visual report:
 
 ```powershell
-.\Tests\run_tests.ps1 original -Visualize
+.\Unit Tests\run_unit_tests.ps1 original -Visualize
 ```
 
 [Image 1](#img1) displays general code coverage results, before introducing new tests. We can see that around two thirds of lines (68%) and branches (64%) are covered, which is a good start but can be improved.
 
 <figure id="img1" style="text-align: center;">
-  <img src="./Tests/Images/report1.png" alt="Original code coverage general results">
+  <img src="Unit Tests/Images/report1.png" alt="Original code coverage general results">
   <figcaption>Image 1: Original code coverage general results</figcaption>
 </figure>
 
@@ -40,13 +40,13 @@ On the other hand, there are classes that are not covered as much or not covered
 4. Utility classes: Simple utility structures like `Mzinga.AppInfo`, `Mzinga.VersionUtils`, `Mzinga.Core.CacheMetricsSet` and `Mzinga.Core.MoveSet` currently have 0% coverage but require minimal effort to verify.
 
 <figure id="img2" style="text-align: center;">
-  <img src="./Tests/Images/report2.png" alt="Original code coverage detailed results">
+  <img src="Unit Tests/Images/report2.png" alt="Original code coverage detailed results">
   <figcaption>Image 2: Original code coverage detailed results</figcaption>
 </figure>
 
 ### **Adding new tests**
 
-A new unit test project named [Mzinga.Tests.New](./Tests/Mzinga.Tests.New) was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
+A new unit test project named [Mzinga.Tests.New](./Unit Tests/Mzinga.Tests.New) was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
 
 #### **EngineConfig**
 This class handles engine configurations, validation and storing parameters like `MaxHelperThreads` and `GameAI` metrics.
@@ -97,13 +97,13 @@ Utility container holding distinct potential movements in memory using arrays.
 After adding the new unit tests, we ran the test suite against both the original and new tests using the script:
 
 ```powershell
-.\Tests\run_tests.ps1 all -Visualize
+.\Unit Tests\run_unit_tests.ps1 all -Visualize
 ```
 
 The general coverage results have significantly improved. As we can see in [Image 3](#img3), line coverage increased from 68.4% to 83.3%, and branch coverage increased from 64.4% to 80.4%. This successfully achieved our goal of reaching over 80% total code coverage.
 
 <figure id="img3" style="text-align: center;">
-  <img src="./Tests/Images/report3.png" alt="Final code coverage general results">
+  <img src="Unit Tests/Images/report3.png" alt="Final code coverage general results">
   <figcaption>Image 3: Final code coverage general results</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ Looking at the detailed results for the classes where tests were added, we achie
 - **`Mzinga.Core.MoveSet`** increased from 0% to 45% line coverage.
 
 <figure id="img4" style="text-align: center;">
-  <img src="./Tests/Images/report4.png" alt="Final code coverage detailed results">
+  <img src="Unit Tests/Images/report4.png" alt="Final code coverage detailed results">
   <figcaption>Image 4: Final code coverage detailed results</figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ Looking at the detailed results for the classes where tests were added, we achie
 
 To perform mutation testing on the Mzinga project, we will use **Stryker.NET** (`dotnet-stryker`). Stryker is a popular, open-source mutation testing framework specifically designed for .NET and C# applications. It automates the generation of mutants, runs the tests against them and produces reports highlighting which mutants survived and where potential gaps in the test suite exist.
 
-To simplify the execution of Stryker, a PowerShell script ([run_mutation_tests.ps1](./Tests/MutationTesting/run_mutation_tests.ps1)) was created. This script handles Stryker installation, runs the tool and manages reporting. Because running mutation testing over the entire project can take extremely long (sometimes days), the execution script was internally configured to focus exclusively on the `Mzinga.Engine` namespace. Specifically, it targets the `Engine` and `EngineConfig` classes, as these are one of the classes where we previously introduced new unit tests.
+To simplify the execution of Stryker, a PowerShell script ([run_mutation_test.ps1](./Mutation Testing/run_mutation_test.ps1)) was created. This script handles Stryker installation, runs the tool and manages reporting. Because running mutation testing over the entire project can take extremely long (sometimes days), the execution script was internally configured to focus exclusively on the `Mzinga.Engine` namespace. Specifically, it targets the `Engine` and `EngineConfig` classes, as these are one of the classes where we previously introduced new unit tests.
 
 The script accepts the following arguments:
 - **`-Rerun`**: Forces Stryker to execute again and ignores previously generated results for the testing target.
@@ -140,7 +140,7 @@ The script accepts the following arguments:
 We will run the execution script with visualizing the results:
 
 ```powershell
-.\Tests\MutationTesting\run_mutation_tests.ps1 -Visualize
+.\Mutation Testing\run_mutation_test.ps1 -Visualize
 ```
 
 Before we review the results, here's a brief explanation of the terms found in the report:
@@ -162,36 +162,36 @@ Looking at the detailed breakdown:
 - **`Engine.cs`** achieved a mutation score of **18.39%** (3 out of 558 mutants killed).
 
 <figure id="img5" style="text-align: center;">
-  <img src="./Tests/MutationTesting/Images/report1.png" alt="Mutation testing results (Mutants)">
+  <img src="./Mutation Testing/Images/report1.png" alt="Mutation testing results (Mutants)">
   <figcaption>Image 5: Mutation testing results (Mutants)</figcaption>
 </figure> 
 
 <figure id="img6" style="text-align: center;">
-  <img src="./Tests/MutationTesting/Images/report2.png" alt="Mutation testing results (Tests">
+  <img src="./Mutation Testing/Images/report2.png" alt="Mutation testing results (Tests">
   <figcaption>Image 6: Mutation testing results (Tests)</figcaption>
 </figure>
 
 To further improve these tests, new test boundaries should be added to assert specific state behaviors based on those surviving mutants. If we go into a specific file we can check the "Survived" option ([Image 7](#img7)), which will mark the lines that were mutated and show what change was made. This tells us exactly which additional assertions we need to include.
 
 <figure id="img7" style="text-align: center;">
-  <img src="./Tests/MutationTesting/Images/report3.png" alt="Setting up mutant search">
+  <img src="./Mutation Testing/Images/report3.png" alt="Setting up mutant search">
   <figcaption>Image 7: Setting up mutant search</figcaption>
 </figure>
 
 We can see that the common mutants introduced include switching function calls with an empty command, negating expressions, changing string messages etc. (Images [8](#img8), [9](#img9) and [10](#img10)).
 
 <figure id="img8" style="text-align: center;">
-  <img src="./Tests/MutationTesting/Images/report4.png" alt="Survived mutant example 1">
+  <img src="./Mutation Testing/Images/report4.png" alt="Survived mutant example 1">
   <figcaption>Image 8: Survived mutant example 1</figcaption>
 </figure>
 
 <figure id="img9" style="text-align: center;">
-  <img src="./Tests/MutationTesting/Images/report5.png" alt="Survived mutant example 2">
+  <img src="./Mutation Testing/Images/report5.png" alt="Survived mutant example 2">
   <figcaption>Image 9: Survived mutant example 2</figcaption>
 </figure>
 
 <figure id="img10" style="text-align: center;">
-  <img src="./Tests/MutationTesting/Images/report6.png" alt="Survived mutant example 3">
+  <img src="./Mutation Testing/Images/report6.png" alt="Survived mutant example 3">
   <figcaption>Image 10: Survived mutant example 3</figcaption>
 </figure>
 
@@ -207,7 +207,7 @@ Based on the mutants generated and tests covering them, we can think about possi
 
 The original Mzinga codebase contains an [.editorconfig](./Mzinga/src/.editorconfig) file in its `src/` directory. This existing configuration only disables a few specific C# features, such as implicit object creation, range operators and switch expressions, but it completely lacks standard formatting rules to ensure code consistency.
 
-To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration ([.editorconfig](./DotnetFormat/.editorconfig)) is located in the [DotnetFormat](./DotnetFormat) directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
+To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration ([.editorconfig](./Code Formatting/.editorconfig)) is located in the [Code Formatting](./Code Formatting) directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
 - **Encoding and spacing**: Forces UTF-8 representation, trailing whitespace removal and mandatory newlines at the end of file. This is applied to all files, while following rules apply to `.cs` files only.
 - **Indentation**: Forces standard 4-space indentation across all code components.
 - **Newline structure**: Forces placing open braces on new lines for all control flow expressions (`if`, `else`, `catch`, `finally`, etc.). It also forces explicit new lines between query expression clauses.
@@ -215,13 +215,13 @@ To properly format the code and enforce stricter style checks, the built-in **`d
 - **Naming conventions**: Warns if interfaces do not start with `I` and if private/internal fields do not start with an underscore.
 - **Modern syntax conventions**: Warns if modern `throw` expressions, null-coalescing (`??`) and null-conditional (`?.`) operators should be used. It also checks if `is null` expressions are used instead of reference equality methods.
 
-To streamline formatting and style verification a PowerShell script ([dotnet_format.ps1](./DotnetFormat/dotnet_format.ps1)) was created. This script applies custom styling rules from the local [.editorconfig](./DotnetFormat/.editorconfig) format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
+To streamline formatting and style verification a PowerShell script ([run_dotnet_format.ps1](./Code Formatting/run_dotnet_format.ps1)) was created. This script applies custom styling rules from the local [.editorconfig](./Code Formatting/.editorconfig) format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of formatting execution.
   - `check`: Runs in a verify-only mode. It reports errors and generates a log without modifying original source code.
   - `apply`: Directly formats and modifies the original files according to the rules defined in the format config file and applies the changes to the source repository.
-- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [DotnetFormat/Results](./DotnetFormat/Results) folder where the output report will be saved.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Code Formatting/Results](./Code Formatting/Results) folder where the output report will be saved.
 - **`-Visualize`**: Parses the generated JSON report into an HTML document and automatically opens it in the default web browser.
 
 ### **Results**
@@ -229,51 +229,51 @@ The script accepts the following arguments:
 First, we will run the formatting script with `check` option and visualization to see which files and lines break defined rules.
 
 ```powershell
-.\DotnetFormat\dotnet_format.ps1 check InitialCheck -Visualize
+.\Code Formatting\run_dotnet_format.ps1 check InitialCheck -Visualize
 ```
 
-As a result, `JSON` and `HTML` reports are generated in [DotnetFormat/Results/InitialCheck](./DotnetFormat/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
+As a result, `JSON` and `HTML` reports are generated in [Code Formatting/Results/InitialCheck](./Code Formatting/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
 
 <figure id="img11" style="text-align: center;">
-  <img src="./DotnetFormat/Images/report1.png" alt="Initial format check results">
+  <img src="./Code Formatting/Images/report1.png" alt="Initial format check results">
   <figcaption>Image 11: Initial format check results</figcaption>
 </figure>
 
 <figure id="img12" style="text-align: center;">
-  <img src="./DotnetFormat/Images/report2.png" alt="Initial format check results">
+  <img src="./Code Formatting/Images/report2.png" alt="Initial format check results">
   <figcaption>Image 12: Initial format check results</figcaption>
 </figure>
 
 <figure id="img13" style="text-align: center;">
-  <img src="./DotnetFormat/Images/report3.png" alt="Initial format check results">
+  <img src="./Code Formatting/Images/report3.png" alt="Initial format check results">
   <figcaption>Image 13: Initial format check results</figcaption>
 </figure>
 
 <figure id="img14" style="text-align: center;">
-  <img src="./DotnetFormat/Images/report4.png" alt="Initial format check results">
+  <img src="./Code Formatting/Images/report4.png" alt="Initial format check results">
   <figcaption>Image 14: Initial format check results</figcaption>
 </figure>
 
 Now, we will run the same script in apply mode, which will actually apply formatting rules to the original code.
 
 ```powershell
-.\DotnetFormat\dotnet_format.ps1 apply FormatApply -Visualize
+.\Code Formatting\run_dotnet_format.ps1 apply FormatApply -Visualize
 ```
 
 We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which represent name rule violations ([Image 15](#img15)). The reason for this is that renaming symbols is a complex refactoring operation and automatic renaming could potentially break the codebase if those symbols are used in reflection, serialization or exposed via public APIs, so the tool refuses to fix them automatically and requires manual fixing. We won't be manually fixing naming violations in this analysis.
 
 <figure id="img15" style="text-align: center;">
-  <img src="./DotnetFormat/Images/apply.png" alt="Format apply warning">
+  <img src="./Code Formatting/Images/apply.png" alt="Format apply warning">
   <figcaption>Image 15: Format apply warning</figcaption>
 </figure>
 
-Generated report in [DotnetFormat/Results/FormatApply](./DotnetFormat/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
+Generated report in [Code Formatting/Results/FormatApply](./Code Formatting/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
 
 ```powershell
-.\DotnetFormat\dotnet_format.ps1 check FinalCheck -Visualize
+.\Code Formatting\run_dotnet_format.ps1 check FinalCheck -Visualize
 ```
 
-Generated report in [DotnetFormat/Results/FinalCheck](./DotnetFormat/Results/FinalCheck) shows that only warnings left are name rule violations. As was mentioned before, we will not fix these manually.
+Generated report in [Code Formatting/Results/FinalCheck](./Code Formatting/Results/FinalCheck) shows that only warnings left are name rule violations. As was mentioned before, we will not fix these manually.
 
 **Note**: If you want to recreate these steps (or any others) more than once, you need to discard changes made in the original [Mzinga](./Mzinga) repo.
 
@@ -285,13 +285,13 @@ git submodule update --init --recursive --force
 
 Static code analysis involves examining source code without executing it, typically to find potential vulnerabilities or deviations from coding standards. For .NET projects, **Roslyn Analyzers** provide a powerful mechanism for this. **[Roslynator](https://github.com/dotnet/roslynator)** is an open-source collection of over 500 analyzers and refactorings for C# that we will integrate into the Mzinga project.
 
-A PowerShell script ([run_roslynator.ps1](./Roslynator/run_roslynator.ps1)) was created in the [Roslynator](./Roslynator) directory. This script first injects the required Roslynator NuGet packages into the main `.csproj` files, and then wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
+A PowerShell script ([run_roslynator.ps1](./Static Code Analysis/run_roslynator.ps1)) was created in the [Static Code Analysis](./Static Code Analysis) directory. This script first injects the required Roslynator NuGet packages into the main `.csproj` files, and then wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of execution.
   - `check`: Discovers and reports analyzer warnings without making any changes.
   - `apply`: Automatically applies fixes for any known warnings and updates the source code.
-- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Roslynator/Results](./Roslynator/Results) folder where the output report will be saved.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Static Code Analysis/Results](./Static Code Analysis/Results) folder where the output report will be saved.
 - **`-Visualize`**: Parses the generated JSON output into an HTML report and automatically opens it in the default web browser.
 
 ### **Initial check**
@@ -299,7 +299,7 @@ The script accepts the following arguments:
 Running the script in `check` mode allows us to see what issues exist before any changes are applied.
 
 ```powershell
-.\Roslynator\run_roslynator.ps1 check InitialCheck -Visualize
+.\Static Code Analysis\run_roslynator.ps1 check InitialCheck -Visualize
 ```
 
 The output revealed a surprisingly small number of codebase issues. Finding only a few warnings, none of which represent critical architectural flaws or security vulnerabilities, indicates that the original Mzinga project is already in excellent condition. The identified issues were:
@@ -311,7 +311,7 @@ The output revealed a surprisingly small number of codebase issues. Finding only
 [Image 16](#img16) shows the generated HTML report. 
 
 <figure id="img16" style="text-align: center;">
-  <img src="./Roslynator/Images/report1.png" alt="Initial static analysis report">
+  <img src="./Static Code Analysis/Images/report1.png" alt="Initial static analysis report">
   <figcaption>Image 16: Initial static analysis report</figcaption>
 </figure>
 
@@ -320,13 +320,13 @@ The output revealed a surprisingly small number of codebase issues. Finding only
 After initial check, we will run the tool in `apply` mode to automatically refactor the code and resolve the warnings.
 
 ```powershell
-.\Roslynator\run_roslynator.ps1 apply FormatApply -Visualize
+.\Static Code Analysis\run_roslynator.ps1 apply FormatApply -Visualize
 ```
 
 As we can see on the [Image 17](#img17), static class and string comparison warnings were resolved, but analyzer could not automatically fix empty catch blocks and exception constructor warnings.
 
 <figure id="img17" style="text-align: center;">
-  <img src="./Roslynator/Images/report2.png" alt="Remaining static analysis warnings">
+  <img src="./Static Code Analysis/Images/report2.png" alt="Remaining static analysis warnings">
   <figcaption>Image 17: Remaining static analysis warnings</figcaption>
 </figure>
 
