@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../Mzinga/src/Mzinga.Engine/Mzinga.Engine.csproj" />
+  <Project Path="../Mzinga/src/Mzinga/Mzinga.csproj" />
+  <Project Path="Mzinga.Architecture.Tests/Mzinga.Architecture.Tests.csproj" />
+</Solution>
