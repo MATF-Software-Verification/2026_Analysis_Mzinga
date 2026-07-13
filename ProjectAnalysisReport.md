@@ -20,7 +20,7 @@ The script accepts the following arguments:
 Before introducing additional unit tests to the codebase, it is crucial to establish the current test coverage baseline. We will run only the original tests and generate the visual report:
 
 ```powershell
-.\Unit Tests\run_unit_tests.ps1 original -Visualize
+& ".\Unit Tests\run_unit_tests.ps1" original -Visualize
 ```
 
 [Image 1](#img1) displays general code coverage results, before introducing new tests. We can see that around two thirds of lines (68%) and branches (64%) are covered, which is a good start but can be improved.
@@ -97,7 +97,7 @@ Utility container holding distinct potential movements in memory using arrays.
 After adding the new unit tests, we ran the test suite against both the original and new tests using the script:
 
 ```powershell
-.\Unit Tests\run_unit_tests.ps1 all -Visualize
+& ".\Unit Tests\run_unit_tests.ps1" all -Visualize
 ```
 
 The general coverage results have significantly improved. As we can see in [Image 3](#img3), line coverage increased from 68.4% to 83.3%, and branch coverage increased from 64.4% to 80.4%. This successfully achieved our goal of reaching over 80% total code coverage.
@@ -140,7 +140,7 @@ The script accepts the following arguments:
 We will run the execution script with visualizing the results:
 
 ```powershell
-.\Mutation Testing\run_mutation_test.ps1 -Visualize
+& ".\Mutation Testing\run_mutation_test.ps1" -Visualize
 ```
 
 Before we review the results, here's a brief explanation of the terms found in the report:
@@ -229,7 +229,7 @@ The script accepts the following arguments:
 First, we will run the formatting script with `check` option and visualization to see which files and lines break defined rules.
 
 ```powershell
-.\Code Formatting\run_dotnet_format.ps1 check InitialCheck -Visualize
+& ".\Code Formatting\run_dotnet_format.ps1" check InitialCheck -Visualize
 ```
 
 As a result, `JSON` and `HTML` reports are generated in [Code Formatting/Results/InitialCheck](./Code Formatting/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
@@ -257,7 +257,7 @@ As a result, `JSON` and `HTML` reports are generated in [Code Formatting/Results
 Now, we will run the same script in apply mode, which will actually apply formatting rules to the original code.
 
 ```powershell
-.\Code Formatting\run_dotnet_format.ps1 apply FormatApply -Visualize
+& ".\Code Formatting\run_dotnet_format.ps1" apply FormatApply -Visualize
 ```
 
 We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which represent name rule violations ([Image 15](#img15)). The reason for this is that renaming symbols is a complex refactoring operation and automatic renaming could potentially break the codebase if those symbols are used in reflection, serialization or exposed via public APIs, so the tool refuses to fix them automatically and requires manual fixing. We won't be manually fixing naming violations in this analysis.
@@ -270,7 +270,7 @@ We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which 
 Generated report in [Code Formatting/Results/FormatApply](./Code Formatting/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
 
 ```powershell
-.\Code Formatting\run_dotnet_format.ps1 check FinalCheck -Visualize
+& ".\Code Formatting\run_dotnet_format.ps1" check FinalCheck -Visualize
 ```
 
 Generated report in [Code Formatting/Results/FinalCheck](./Code Formatting/Results/FinalCheck) shows that only warnings left are name rule violations. As was mentioned before, we will not fix these manually.
@@ -299,7 +299,7 @@ The script accepts the following arguments:
 Running the script in `check` mode allows us to see what issues exist before any changes are applied.
 
 ```powershell
-.\Static Code Analysis\run_roslynator.ps1 check InitialCheck -Visualize
+& ".\Static Code Analysis\run_roslynator.ps1" check InitialCheck -Visualize
 ```
 
 The output revealed a surprisingly small number of codebase issues. Finding only a few warnings, none of which represent critical architectural flaws or security vulnerabilities, indicates that the original Mzinga project is already in excellent condition. The identified issues were:
@@ -320,7 +320,7 @@ The output revealed a surprisingly small number of codebase issues. Finding only
 After initial check, we will run the tool in `apply` mode to automatically refactor the code and resolve the warnings.
 
 ```powershell
-.\Static Code Analysis\run_roslynator.ps1 apply FormatApply -Visualize
+& ".\Static Code Analysis\run_roslynator.ps1" apply FormatApply -Visualize
 ```
 
 As we can see on the [Image 17](#img17), static class and string comparison warnings were resolved, but analyzer could not automatically fix empty catch blocks and exception constructor warnings.
@@ -393,7 +393,7 @@ The script accepts the following arguments:
 We will run the execution script with visualizing the results:
 
 ```powershell
-.\Performance Profiling\run_profiler.ps1 -Visualize
+& ".\Performance Profiling\run_profiler.ps1" -Visualize
 ```
 
 ### **Results**
@@ -458,7 +458,7 @@ After that, we define architecture rules similar to the way unit tests are writt
 To run the tests and inspect results, we will run the script with visualization.
 
 ```powershell
-.\Architecture-as-Code Testing\run_arch_tests.ps1 InitialCheck -Visualize
+& ".\Architecture-as-Code Testing\run_arch_tests.ps1" InitialCheck -Visualize
 ```
 
 As shown on the [image 21](#img21), all architectural rules passed successfully.
