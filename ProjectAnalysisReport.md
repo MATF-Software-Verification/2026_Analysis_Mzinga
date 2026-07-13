@@ -25,10 +25,10 @@ Before introducing additional unit tests to the codebase, it is crucial to estab
 
 [Image 1](#img1) displays general code coverage results, before introducing new tests. We can see that around two thirds of lines (68%) and branches (64%) are covered, which is a good start but can be improved.
 
-<figure id="img1" style="text-align: center;">
+<div id="img1" align="center">
   <img src="Unit Tests/Images/report1.png" alt="Original code coverage general results">
-  <figcaption>Image 1: Original code coverage general results</figcaption>
-</figure>
+  <p><em>Image 1: Original code coverage general results</em></p>
+</div>
 
 [Image 2](#img2) shows detailed code coverage by main classes. We can see that main game and AI logic are covered with high coverage percentage. This includes `Mzinga.Core.Board` which covers board state, `Mzinga.Core.Move` which validates and executes moves, `Mzinga.Core.AI.GameAI` which implements algorithms for game AI, as well as some classes with 100% code coverage such as `PieceMetrics`.
 
@@ -39,10 +39,10 @@ On the other hand, there are classes that are not covered as much or not covered
 3. Core components with partial coverage: Classes like `Mzinga.Core.GameMetadata` (50% coverage) and `Mzinga.Core.AI.MetricWeights` (64.3% coverage) have gaps that are not tested.
 4. Utility classes: Simple utility structures like `Mzinga.AppInfo`, `Mzinga.VersionUtils`, `Mzinga.Core.CacheMetricsSet` and `Mzinga.Core.MoveSet` currently have 0% coverage but require minimal effort to verify.
 
-<figure id="img2" style="text-align: center;">
+<div id="img2" align="center">
   <img src="Unit Tests/Images/report2.png" alt="Original code coverage detailed results">
-  <figcaption>Image 2: Original code coverage detailed results</figcaption>
-</figure>
+  <p><em>Image 2: Original code coverage detailed results</em></p>
+</div>
 
 ### **Adding new tests**
 
@@ -102,10 +102,10 @@ After adding the new unit tests, we ran the test suite against both the original
 
 The general coverage results have significantly improved. As we can see in [Image 3](#img3), line coverage increased from 68.4% to 83.3%, and branch coverage increased from 64.4% to 80.4%. This successfully achieved our goal of reaching over 80% total code coverage.
 
-<figure id="img3" style="text-align: center;">
+<div id="img3" align="center">
   <img src="Unit Tests/Images/report3.png" alt="Final code coverage general results">
-  <figcaption>Image 3: Final code coverage general results</figcaption>
-</figure>
+  <p><em>Image 3: Final code coverage general results</em></p>
+</div>
 
 Looking at the detailed results for the classes where tests were added, we achieved substantial improvements:
 - **`Mzinga.Engine.Engine`** increased from 0% to 66.4% line coverage.
@@ -116,10 +116,10 @@ Looking at the detailed results for the classes where tests were added, we achie
 - **`Mzinga.VersionUtils`** increased from 0% to 52.9% line coverage.
 - **`Mzinga.Core.MoveSet`** increased from 0% to 45% line coverage.
 
-<figure id="img4" style="text-align: center;">
+<div id="img4" align="center">
   <img src="Unit Tests/Images/report4.png" alt="Final code coverage detailed results">
-  <figcaption>Image 4: Final code coverage detailed results</figcaption>
-</figure>
+  <p><em>Image 4: Final code coverage detailed results</em></p>
+</div>
 
 ## **Mutation testing**
 
@@ -161,39 +161,39 @@ Looking at the detailed breakdown:
 - **`EngineConfig.cs`** achieved a mutation score of **51.82%** (19 out of 191 mutants killed).
 - **`Engine.cs`** achieved a mutation score of **18.39%** (3 out of 558 mutants killed).
 
-<figure id="img5" style="text-align: center;">
+<div id="img5" align="center">
   <img src="./Mutation Testing/Images/report1.png" alt="Mutation testing results (Mutants)">
-  <figcaption>Image 5: Mutation testing results (Mutants)</figcaption>
-</figure> 
+  <p><em>Image 5: Mutation testing results (Mutants)</em></p>
+</div> 
 
-<figure id="img6" style="text-align: center;">
+<div id="img6" align="center">
   <img src="./Mutation Testing/Images/report2.png" alt="Mutation testing results (Tests">
-  <figcaption>Image 6: Mutation testing results (Tests)</figcaption>
-</figure>
+  <p><em>Image 6: Mutation testing results (Tests)</em></p>
+</div>
 
 To further improve these tests, new test boundaries should be added to assert specific state behaviors based on those surviving mutants. If we go into a specific file we can check the "Survived" option ([Image 7](#img7)), which will mark the lines that were mutated and show what change was made. This tells us exactly which additional assertions we need to include.
 
-<figure id="img7" style="text-align: center;">
+<div id="img7" align="center">
   <img src="./Mutation Testing/Images/report3.png" alt="Setting up mutant search">
-  <figcaption>Image 7: Setting up mutant search</figcaption>
-</figure>
+  <p><em>Image 7: Setting up mutant search</em></p>
+</div>
 
 We can see that the common mutants introduced include switching function calls with an empty command, negating expressions, changing string messages etc. (Images [8](#img8), [9](#img9) and [10](#img10)).
 
-<figure id="img8" style="text-align: center;">
+<div id="img8" align="center">
   <img src="./Mutation Testing/Images/report4.png" alt="Survived mutant example 1">
-  <figcaption>Image 8: Survived mutant example 1</figcaption>
-</figure>
+  <p><em>Image 8: Survived mutant example 1</em></p>
+</div>
 
-<figure id="img9" style="text-align: center;">
+<div id="img9" align="center">
   <img src="./Mutation Testing/Images/report5.png" alt="Survived mutant example 2">
-  <figcaption>Image 9: Survived mutant example 2</figcaption>
-</figure>
+  <p><em>Image 9: Survived mutant example 2</em></p>
+</div>
 
-<figure id="img10" style="text-align: center;">
+<div id="img10" align="center">
   <img src="./Mutation Testing/Images/report6.png" alt="Survived mutant example 3">
-  <figcaption>Image 10: Survived mutant example 3</figcaption>
-</figure>
+  <p><em>Image 10: Survived mutant example 3</em></p>
+</div>
 
 Based on the mutants generated and tests covering them, we can think about possible solutions for making the tests better.
 
@@ -234,25 +234,25 @@ First, we will run the formatting script with `check` option and visualization t
 
 As a result, `JSON` and `HTML` reports are generated in [Code Formatting/Results/InitialCheck](./Code Formatting/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
 
-<figure id="img11" style="text-align: center;">
+<div id="img11" align="center">
   <img src="./Code Formatting/Images/report1.png" alt="Initial format check results">
-  <figcaption>Image 11: Initial format check results</figcaption>
-</figure>
+  <p><em>Image 11: Initial format check results</em></p>
+</div>
 
-<figure id="img12" style="text-align: center;">
+<div id="img12" align="center">
   <img src="./Code Formatting/Images/report2.png" alt="Initial format check results">
-  <figcaption>Image 12: Initial format check results</figcaption>
-</figure>
+  <p><em>Image 12: Initial format check results</em></p>
+</div>
 
-<figure id="img13" style="text-align: center;">
+<div id="img13" align="center">
   <img src="./Code Formatting/Images/report3.png" alt="Initial format check results">
-  <figcaption>Image 13: Initial format check results</figcaption>
-</figure>
+  <p><em>Image 13: Initial format check results</em></p>
+</div>
 
-<figure id="img14" style="text-align: center;">
+<div id="img14" align="center">
   <img src="./Code Formatting/Images/report4.png" alt="Initial format check results">
-  <figcaption>Image 14: Initial format check results</figcaption>
-</figure>
+  <p><em>Image 14: Initial format check results</em></p>
+</div>
 
 Now, we will run the same script in apply mode, which will actually apply formatting rules to the original code.
 
@@ -262,10 +262,10 @@ Now, we will run the same script in apply mode, which will actually apply format
 
 We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which represent name rule violations ([Image 15](#img15)). The reason for this is that renaming symbols is a complex refactoring operation and automatic renaming could potentially break the codebase if those symbols are used in reflection, serialization or exposed via public APIs, so the tool refuses to fix them automatically and requires manual fixing. We won't be manually fixing naming violations in this analysis.
 
-<figure id="img15" style="text-align: center;">
+<div id="img15" align="center">
   <img src="./Code Formatting/Images/apply.png" alt="Format apply warning">
-  <figcaption>Image 15: Format apply warning</figcaption>
-</figure>
+  <p><em>Image 15: Format apply warning</em></p>
+</div>
 
 Generated report in [Code Formatting/Results/FormatApply](./Code Formatting/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
 
@@ -310,10 +310,10 @@ The output revealed a surprisingly small number of codebase issues. Finding only
 
 [Image 16](#img16) shows the generated HTML report. 
 
-<figure id="img16" style="text-align: center;">
+<div id="img16" align="center">
   <img src="./Static Code Analysis/Images/report1.png" alt="Initial static analysis report">
-  <figcaption>Image 16: Initial static analysis report</figcaption>
-</figure>
+  <p><em>Image 16: Initial static analysis report</em></p>
+</div>
 
 ### **Applying changes**
 
@@ -325,10 +325,10 @@ After initial check, we will run the tool in `apply` mode to automatically refac
 
 As we can see on the [Image 17](#img17), static class and string comparison warnings were resolved, but analyzer could not automatically fix empty catch blocks and exception constructor warnings.
 
-<figure id="img17" style="text-align: center;">
+<div id="img17" align="center">
   <img src="./Static Code Analysis/Images/report2.png" alt="Remaining static analysis warnings">
-  <figcaption>Image 17: Remaining static analysis warnings</figcaption>
-</figure>
+  <p><em>Image 17: Remaining static analysis warnings</em></p>
+</div>
 
 Resolving `RCS1075` (Avoid empty catch clause) requires human intervention to determine the appropriate error-handling strategy, so no automatic fix exists. Depending on the intent, potential resolutions include tracking the error using logging mechanisms, rethrowing the exception or replacing the generic `System.Exception` with a specific error type.
 
@@ -404,17 +404,17 @@ The generated report ([Report.nettrace](./Performance%20Profiling/Results/Report
 2. **`IsPinned` / `IsOneHive`**: These functions check the "One Hive Rule" - ensuring that moving a piece does not split the hive in two. It consumes extremely high CPU resources because it must simulate board connectivity dynamically on every piece placement.
 3. **`CalculateValidPlacements`**: Calculating valid placements for playing new pieces requires evaluating board adjacencies to make sure no opposing piece touches the newly placed colored piece.
 
-<figure id="img18" style="text-align: center;">
+<div id="img18" align="center">
   <img src="./Performance Profiling/Images/report1.png" alt="Profiling report">
-  <figcaption>Image 18: Profiling report</figcaption>
-</figure>
+  <p><em>Image 18: Profiling report</em></p>
+</div>
 
 To confirm how we can optimize this, we need to locate the root execution source triggering these operations. To open the call tree view, click `Open Details...` and select `Call Tree` in the `Current View` section. Keep on clicking the `Expand Hot Path` option until the primary bottlenecks are reached. This will expand the execution trace from thread initialization down to the deeply nested engine methods ([Image 20](#img20)).
 
-<figure id="img20" style="text-align: center;">
+<div id="img20" align="center">
   <img src="./Performance Profiling/Images/report2.png" alt="Call tree">
-  <figcaption>Image 20: Call tree</figcaption>
-</figure>
+  <p><em>Image 20: Call tree</em></p>
+</div>
 
 Bottleneck happens because of the way `GameAI` generates its search tree. It evaluates millions of game boards by trying different move combinations (`PrincipalVariationSearchAsync`) and when it reaches leaf nodes it initiates deeper tactical checks (`QuiescenceSearchAsync`). To evaluate who is winning in a specific board state, the engine calculates a heuristic score using `BoardMetrics`.
 
@@ -463,9 +463,9 @@ To run the tests and inspect results, we will run the script with visualization.
 
 As shown on the [image 21](#img21), all architectural rules passed successfully.
 
-<figure id="img21" style="text-align: center;">
+<div id="img21" align="center">
   <img src="./Architecture-as-Code Testing/Images/report.png" alt="Architecture-as-Code test results">
-  <figcaption>Image 21: Architecture-as-Code test results</figcaption>
-</figure>
+  <p><em>Image 21: Architecture-as-Code test results</em></p>
+</div>
 
 This confirms that the Mzinga codebase is robust, clean and maintainable. The core game rules (`Core`) are completely isolated from the execution logic (`Engine`) and neither of the backend layers interacts directly with the user interface (`Viewer`). The complete absence of circular dependencies guarantees an acyclic dependency graph. This prevents the codebase from evolving into tightly coupled 'spaghetti code' over time and makes future extension or refactoring safer. Overall, these results show that Mzinga is built upon a solid architectural foundation, successfully protecting its core from external dependencies and UI logic.
