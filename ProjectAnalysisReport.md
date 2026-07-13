@@ -429,3 +429,43 @@ To resolve this inefficiency, the `Board` class should to implement incremental 
 Upon playing or undoing a piece, it should identify only the specific bugs directly affected by the change (the moved piece itself, its direct neighbors and pieces that were "pinned" but are now free). It would then recalculate valid moves exclusively for those pieces, leaving the rest of the board's precalculated moves completely intact. 
 
 This approach would drastically decrease the required CPU cycling, allowing the AI to search significantly deeper in the same time limit. Introducing incremental move generation is a complex architectural change that spans across the core game logic and is not easy to implement. We won't be implementing it in this analysis and will leave it as a suggestion for the author.
+
+## **Architecture-as-Code Testing**
+
+**Architecture-as-Code (AaC)** is a technique that allows treating application architecture and design rules as part of the codebase. Through automated tests, we can define system boundaries, dependency rules, naming conventions and directory structures. This approach prevents architectural degradation over time by ensuring that system components do not invoke methods or reference classes they are not supposed to communicate with. **[ArchUnitNET](https://archunitnet.readthedocs.io/en/stable/)** is an AaC tool made for C# and .NET that allows developers to write architecture tests as executable code. Its biggest strength lies in its declarative API, making architectural rules easy to write and understand. For the Mzinga project, we will use this tool to ensure that isolated subsystems do not depend on each other outside of the defined rules, preventing confusion and highly coupled code.
+
+To automate this process, a separate test project [Mzinga.Architecture.Tests](./Architecture-as-Code%20Testing/Mzinga.Architecture.Tests) was created within the [Architecture-as-Code Testing](./Architecture-as-Code%20Testing) directory. A PowerShell script ([run_arch_tests.ps1](./Architecture-as-Code%20Testing/run_arch_tests.ps1)) was also created to streamline the execution of these tests and generate visual reports. The script handles the `dotnet test` command execution, and if asked to generate a report, it automatically installs the required ReportGenerator globally (if it doesn't already exist) to process the `.trx` results.
+
+The script accepts the following arguments:
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Architecture-as-Code Testing/Results](./Architecture-as-Code%20Testing/Results) directory where the test results and the HTML output report will be saved.
+- **`-Visualize`**: Parses the generated `.trx` test results into an HTML document using the **trxlog2html** tool and automatically opens it in the default web browser.
+
+### **Defining architecture rules**
+
+Unlike traditional unit tests that evaluate the runtime behavior and logic of individual methods, architecture tests evaluate the structural characteristics of the codebase itself. To perform this, we must first instruct ArchUnitNET to target specific components by loading their assemblies. This processes the IL (Intermediate Language) code to build a cached, in-memory object model of classes, namespaces and their relationships.
+
+After that, we define architecture rules similar to the way unit tests are written. Following rules were added:
+
+1. **Core Layer Isolation Rule**: `Mzinga.Core` namespace components represent base fundamentals without high-level context, so they should not depend on execution logic built in the `Mzinga.Engine` namespace and on presentation logic built in the `Mzinga.Viewer` namespace.
+2. **Engine Layer Isolation Rule**: `Mzinga.Engine` namespace classes hold computation and execution logic but they should not depend directly on the GUI from `Mzinga.Viewer`.
+3. **Testing Code Isolation Rule**: Production source code modules (`Mzinga.Core` and `Mzinga.Engine`) must not depend on any test utilities or mocks found in testing namespaces (`Mzinga.Test`). This guarantees test dependencies naturally fall away when releasing to production.
+4. **Exception Hierarchy Rule**: All classes that end with `Exception` must inherit from the base `System.Exception` class. This guarantees all custom exceptions integrate natively with the .NET error handling pipeline.
+5. **Core I/O Logic Rule**: `Mzinga.Core` should not directly reference system input/output namespaces (`System.IO`). File streams, console inputs and general IO flows must be securely contained entirely in the Engine and Viewer abstraction layers.
+6. **Circular Dependency Rule**: Top-level project namespaces must not contain circular dependencies. This means that if `Engine` depends on `Core`, the `Core` layer cannot depend back on the `Engine`.
+
+### **Results**
+
+To run the tests and inspect results, we will run the script with visualization.
+
+```powershell
+.\Architecture-as-Code Testing\run_arch_tests.ps1 InitialCheck -Visualize
+```
+
+As shown on the [image 21](#img21), all architectural rules passed successfully.
+
+<figure id="img21" style="text-align: center;">
+  <img src="./Architecture-as-Code Testing/Images/report.png" alt="Architecture-as-Code test results">
+  <figcaption>Image 21: Architecture-as-Code test results</figcaption>
+</figure>
+
+This confirms that the Mzinga codebase is robust, clean and maintainable. The core game rules (`Core`) are completely isolated from the execution logic (`Engine`) and neither of the backend layers interacts directly with the user interface (`Viewer`). The complete absence of circular dependencies guarantees an acyclic dependency graph. This prevents the codebase from evolving into tightly coupled 'spaghetti code' over time and makes future extension or refactoring safer. Overall, these results show that Mzinga is built upon a solid architectural foundation, successfully protecting its core from external dependencies and UI logic.
