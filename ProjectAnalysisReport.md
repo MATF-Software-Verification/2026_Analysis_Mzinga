@@ -1,5 +1,18 @@
 # **Mzinga project analysis report**
 
+**[Mzinga](https://github.com/jonthysell/Mzinga)** is an open-source software project that implements an AI engine and a GUI app for the board game **[Hive](https://en.wikipedia.org/wiki/Hive_(game))**. The architecture of Mzinga is divided into several main components, prioritizing the separation of core game rules from execution and presentation layers.
+- **`Mzinga.Core`**: Implements the base rules, piece movement validation and board state logic.
+- **`Mzinga.Engine`**: Acts as the executable AI engine, processing moves and providing heuristic evaluations using the Universal Hive Protocol (UHP).
+- **`Mzinga.Viewer`**: Provides the user interface and graphical presentation of the game.
+
+The purpose of this analysis is to evaluate, review and suggest quality improvements across the Mzinga codebase. Throughout this report, we will apply these software verification techniques and tools:
+- **Unit testing and code coverage** using **MSTest**, **Coverlet** and **ReportGenerator** to establish the test baseline and track improvements.
+- **Mutation testing** using **Stryker.NET** to evaluate the actual effectiveness of unit tests.
+- **Code formatting** using **dotnet format** to standardize code style across the project.
+- **Static code analysis** using **Roslynator** to find and eliminate code-level anomalies, bugs and design issues.
+- **Performance profiling** using **dotnet-trace** to identify bottlenecks within the AI heuristic search tree.
+- **Architecture-as-Code (AaC)** using **ArchUnitNET** to ensure system boundaries and dependencies remain isolated.
+
 ## **Unit testing and code coverage**
 
 The **Mzinga** project utilizes the **MSTest** framework for its existing unit tests. Alongside the test framework, **Coverlet** is integrated as a cross-platform code coverage library for .NET. 
@@ -469,3 +482,17 @@ As shown on the [image 21](#img21), all architectural rules passed successfully.
 </div>
 
 This confirms that the Mzinga codebase is robust, clean and maintainable. The core game rules (`Core`) are completely isolated from the execution logic (`Engine`) and neither of the backend layers interacts directly with the user interface (`Viewer`). The complete absence of circular dependencies guarantees an acyclic dependency graph. This prevents the codebase from evolving into tightly coupled 'spaghetti code' over time and makes future extension or refactoring safer. Overall, these results show that Mzinga is built upon a solid architectural foundation, successfully protecting its core from external dependencies and UI logic.
+
+## **Conclusion**
+
+In summary, this report evaluated the Mzinga project using several practical software verification tools to see how well it is structured and tested.
+
+We started by looking at **unit tests and code coverage**. By adding new unit tests, we improved the overall line coverage from 68.4% to over 83%. However, **mutation testing** later showed that line coverage isn't everything. The test suite only caught 26% of the injected mutations, which indicates that the specific assertions need to be stricter moving forward.
+
+**Code formatting** and **static code analysis** showed that the project is generally in very good shape. We applied formatting rules and ran `dotnet format` alongside Roslynator to thoroughly scan the repository. These tools pinpointed only a few minor issues, such as formatting inconsistencies, naming rule violations, empty catch blocks and missing standard exception constructors. This confirms that the original codebase was already well-written and easy to maintain.
+
+Through **performance profiling** with `dotnet-trace`, we identified the main computational bottleneck. The `Mzinga.Core.Board` class spends too much time recalculating valid moves on every branch of the AI search tree. Implementing incremental move generation in this area would significantly improve the engine's performance.
+
+**Architecture-as-Code** tests confirmed that the project has a very healthy structure. The core game rules, the engine logic and the user interface are completely isolated from one another, with no circular dependencies.
+
+Overall, Mzinga is a robust and well organized project. Applying these verification tools not only validated the existing architecture but also provided clear directions for future optimizations and testing improvements.
