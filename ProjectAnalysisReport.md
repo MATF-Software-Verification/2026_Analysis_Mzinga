@@ -17,7 +17,7 @@ The purpose of this analysis is to evaluate, review and suggest quality improvem
 
 The **Mzinga** project utilizes the **MSTest** framework for its existing unit tests. Alongside the test framework, **Coverlet** is integrated as a cross-platform code coverage library for .NET. 
 
-To streamline the execution and reporting of unit tests, a PowerShell script [run_unit_tests.ps1](./Unit Tests/run_unit_tests.ps1) was created in the [Unit Tests](./Unit Tests) directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
+To streamline the execution and reporting of unit tests, a PowerShell script [run_unit_tests.ps1](./Unit%20Tests/run_unit_tests.ps1) was created in the [Unit Tests](./Unit%20Tests/) directory. This script automates test discovery, runs tests with Coverlet code coverage data collection, and generates an HTML visual report using **ReportGenerator**.
 
 The script accepts the following arguments:
 - **`Target`**: Indicates which context of tests to evaluate. Results and reports are separately cached under `Results/{Target}` and `CoverageReport/{Target}` directories.
@@ -59,7 +59,7 @@ On the other hand, there are classes that are not covered as much or not covered
 
 ### **Adding new tests**
 
-A new unit test project named [Mzinga.Tests.New](./Unit Tests/Mzinga.Tests.New) was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
+A new unit test project named [Mzinga.Tests.New](./Unit%20Tests/Mzinga.Tests.New) was initialized within the `Tests` directory. This MSTest project will hold new test cases focused on covering lines and branches the original tests do not cover. Tests were organized by classes:
 
 #### **EngineConfig**
 This class handles engine configurations, validation and storing parameters like `MaxHelperThreads` and `GameAI` metrics.
@@ -142,7 +142,7 @@ Looking at the detailed results for the classes where tests were added, we achie
 
 To perform mutation testing on the Mzinga project, we will use **Stryker.NET** (`dotnet-stryker`). Stryker is a popular, open-source mutation testing framework specifically designed for .NET and C# applications. It automates the generation of mutants, runs the tests against them and produces reports highlighting which mutants survived and where potential gaps in the test suite exist.
 
-To simplify the execution of Stryker, a PowerShell script ([run_mutation_test.ps1](./Mutation Testing/run_mutation_test.ps1)) was created. This script handles Stryker installation, runs the tool and manages reporting. Because running mutation testing over the entire project can take extremely long (sometimes days), the execution script was internally configured to focus exclusively on the `Mzinga.Engine` namespace. Specifically, it targets the `Engine` and `EngineConfig` classes, as these are one of the classes where we previously introduced new unit tests.
+To simplify the execution of Stryker, a PowerShell script ([run_mutation_test.ps1](./Mutation%20Testing/run_mutation_test.ps1)) was created. This script handles Stryker installation, runs the tool and manages reporting. Because running mutation testing over the entire project can take extremely long (sometimes days), the execution script was internally configured to focus exclusively on the `Mzinga.Engine` namespace. Specifically, it targets the `Engine` and `EngineConfig` classes, as these are one of the classes where we previously introduced new unit tests.
 
 The script accepts the following arguments:
 - **`-Rerun`**: Forces Stryker to execute again and ignores previously generated results for the testing target.
@@ -220,7 +220,7 @@ Based on the mutants generated and tests covering them, we can think about possi
 
 The original Mzinga codebase contains an [.editorconfig](./Mzinga/src/.editorconfig) file in its `src/` directory. This existing configuration only disables a few specific C# features, such as implicit object creation, range operators and switch expressions, but it completely lacks standard formatting rules to ensure code consistency.
 
-To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration ([.editorconfig](./Code Formatting/.editorconfig)) is located in the [Code Formatting](./Code Formatting) directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
+To properly format the code and enforce stricter style checks, the built-in **`dotnet format`** tool from the .NET SDK is used. A new, custom configuration ([.editorconfig](./Code%20Formatting/.editorconfig)) is located in the [Code Formatting](./Code%20Formatting) directory. All formatting options are explained in the [official .NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/csharp-formatting-options). New format config file introduces the following code quality improvements:
 - **Encoding and spacing**: Forces UTF-8 representation, trailing whitespace removal and mandatory newlines at the end of file. This is applied to all files, while following rules apply to `.cs` files only.
 - **Indentation**: Forces standard 4-space indentation across all code components.
 - **Newline structure**: Forces placing open braces on new lines for all control flow expressions (`if`, `else`, `catch`, `finally`, etc.). It also forces explicit new lines between query expression clauses.
@@ -228,13 +228,13 @@ To properly format the code and enforce stricter style checks, the built-in **`d
 - **Naming conventions**: Warns if interfaces do not start with `I` and if private/internal fields do not start with an underscore.
 - **Modern syntax conventions**: Warns if modern `throw` expressions, null-coalescing (`??`) and null-conditional (`?.`) operators should be used. It also checks if `is null` expressions are used instead of reference equality methods.
 
-To streamline formatting and style verification a PowerShell script ([run_dotnet_format.ps1](./Code Formatting/run_dotnet_format.ps1)) was created. This script applies custom styling rules from the local [.editorconfig](./Code Formatting/.editorconfig) format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
+To streamline formatting and style verification a PowerShell script ([run_dotnet_format.ps1](./Code%20Formatting/run_dotnet_format.ps1)) was created. This script applies custom styling rules from the local [.editorconfig](./Code%20Formatting/.editorconfig) format file, runs the apply or check process and generates detailed reports in `JSON` and `HTML` format.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of formatting execution.
   - `check`: Runs in a verify-only mode. It reports errors and generates a log without modifying original source code.
   - `apply`: Directly formats and modifies the original files according to the rules defined in the format config file and applies the changes to the source repository.
-- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Code Formatting/Results](./Code Formatting/Results) folder where the output report will be saved.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Code Formatting/Results](./Code%20Formatting/Results) folder where the output report will be saved.
 - **`-Visualize`**: Parses the generated JSON report into an HTML document and automatically opens it in the default web browser.
 
 ### **Results**
@@ -245,7 +245,7 @@ First, we will run the formatting script with `check` option and visualization t
 & ".\Code Formatting\run_dotnet_format.ps1" check InitialCheck -Visualize
 ```
 
-As a result, `JSON` and `HTML` reports are generated in [Code Formatting/Results/InitialCheck](./Code Formatting/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
+As a result, `JSON` and `HTML` reports are generated in [Code Formatting/Results/InitialCheck](./Code%20Formatting/Results/InitialCheck) folder. Images [11](#img11), [12](#img12), [13](#img13) and [14](#img14) show different formatting rule breaks reported, such as broken import order, name rule violations, unnecessary whitespaces, invalid charset characters and missing accessibility modifiers.
 
 <div id="img11" align="center">
   <img src="./Code Formatting/Images/report1.png" alt="Initial format check results">
@@ -280,13 +280,13 @@ We can see that `dotnet format` reports it can't fix `IDE 1006` warnings, which 
   <p><em>Image 15: Format apply warning</em></p>
 </div>
 
-Generated report in [Code Formatting/Results/FormatApply](./Code Formatting/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
+Generated report in [Code Formatting/Results/FormatApply](./Code%20Formatting/Results/FormatApply/) shows which erros and warnings were fixed. As we can see, everything but the name rule violations were fixed. To verify that, we can run the script in check mode again.
 
 ```powershell
 & ".\Code Formatting\run_dotnet_format.ps1" check FinalCheck -Visualize
 ```
 
-Generated report in [Code Formatting/Results/FinalCheck](./Code Formatting/Results/FinalCheck) shows that only warnings left are name rule violations. As was mentioned before, we will not fix these manually.
+Generated report in [Code Formatting/Results/FinalCheck](./Code%20Formatting/Results/FinalCheck) shows that only warnings left are name rule violations. As was mentioned before, we will not fix these manually.
 
 **Note**: If you want to recreate these steps (or any others) more than once, you need to discard changes made in the original [Mzinga](./Mzinga) repo.
 
@@ -298,13 +298,13 @@ git submodule update --init --recursive --force
 
 Static code analysis involves examining source code without executing it, typically to find potential vulnerabilities or deviations from coding standards. For .NET projects, **Roslyn Analyzers** provide a powerful mechanism for this. **[Roslynator](https://github.com/dotnet/roslynator)** is an open-source collection of over 500 analyzers and refactorings for C# that we will integrate into the Mzinga project.
 
-A PowerShell script ([run_roslynator.ps1](./Static Code Analysis/run_roslynator.ps1)) was created in the [Static Code Analysis](./Static Code Analysis) directory. This script first injects the required Roslynator NuGet packages into the main `.csproj` files, and then wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
+A PowerShell script ([run_roslynator.ps1](./Static%20Code%20Analysis/run_roslynator.ps1)) was created in the [Static Code Analysis](./Static%20Code%20Analysis) directory. This script first injects the required Roslynator NuGet packages into the main `.csproj` files, and then wraps the `dotnet format analyzers` command, similar to how we format code, but focuses strictly on logical and design analysis.
 
 The script accepts the following arguments:
 - **`Mode`** (required): Determines the type of execution.
   - `check`: Discovers and reports analyzer warnings without making any changes.
   - `apply`: Automatically applies fixes for any known warnings and updates the source code.
-- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Static Code Analysis/Results](./Static Code Analysis/Results) folder where the output report will be saved.
+- **`TargetDir`** (required): Specifies the name of the subdirectory inside the [Static Code Analysis/Results](./Static%20Code%20Analysis/Results) folder where the output report will be saved.
 - **`-Visualize`**: Parses the generated JSON output into an HTML report and automatically opens it in the default web browser.
 
 ### **Initial check**
