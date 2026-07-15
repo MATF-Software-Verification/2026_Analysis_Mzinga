@@ -8,11 +8,10 @@ param
 )
 
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$TestsDir = Split-Path -Parent $ScriptDir
-$BaseDir = Split-Path -Parent $TestsDir
+$BaseDir = Split-Path -Parent $ScriptDir
 
 $OriginalTestProject = Join-Path $BaseDir "Mzinga\src\Mzinga.Test\Mzinga.Test.csproj"
-$NewTestProject = Join-Path $TestsDir "Mzinga.Tests.New\Mzinga.Tests.New.csproj"
+$NewTestProject = Join-Path $BaseDir "Unit Tests\Mzinga.Tests.New\Mzinga.Tests.New.csproj"
 $ResultsDir = Join-Path $ScriptDir "Results"
 
 Write-Host "Checking Stryker CLI availability...`n" -ForegroundColor Green
