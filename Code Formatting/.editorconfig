@@ -32,11 +32,11 @@ dotnet_separate_import_directive_groups = true
 
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:warning
 
-csharp_style_throw_expression = true:warn
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warn
+csharp_style_throw_expression = true:warning
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
 
-csharp_style_coalesce_expression = true:warn
-csharp_style_conditional_delegate_call = true:warn
+csharp_style_coalesce_expression = true:warning
+csharp_style_conditional_delegate_call = true:warning
 
 dotnet_naming_rule.interfaces.severity = warning
 dotnet_naming_rule.interfaces.symbols = interfaces

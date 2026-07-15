@@ -322,8 +322,6 @@ namespace Mzinga.Tests.New
             engine.ParseCommand("options set MaxHelperThreads 1");
             engine.ParseCommand("options set PonderDuringIdle SingleThreaded");
             Assert.AreEqual(PonderDuringIdleType.SingleThreaded, engine.Config.PonderDuringIdle);
-
-            //engine.ParseCommand("newgame");
         }
 
         [TestMethod]
@@ -404,7 +402,7 @@ namespace Mzinga.Tests.New
             var config = new EngineConfig();
             var engine = new Engine.Engine("TestEngine", config, MockConsoleOut);
 
-            engine.ParseCommand("newgame Base;InProgress;White[1];White[1];1");
+            engine.ParseCommand("newgame Base;InProgress;White[1];wS1");
 
             Assert.Contains("ok", _consoleOutput[^1]);
             _consoleOutput.Clear();
